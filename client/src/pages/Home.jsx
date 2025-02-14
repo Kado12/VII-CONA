@@ -56,6 +56,19 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Sección de Organizadores */}
+      <section style={styles.organizersSection}>
+        <h2 style={styles.sectionTitle}>Patrocinadores</h2>
+        <div style={styles.organizersGrid}>
+          {partners.map((organizer, index) => (
+            <div key={index} style={styles.organizerCard}>
+              <img src={organizer.logo} alt={organizer.name} style={styles.organizerLogo} />
+              <p style={styles.organizerName}>{organizer.name}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Video Local */}
       <section style={styles.videoSection}>
         <h2 style={styles.videoTitle}>Conoce Más Sobre Nosotros</h2>
@@ -82,7 +95,10 @@ const organizers = [
   {
     name: "Facultad de Ingeniería Civil UNICA",
     logo: "/UNI.png", // Reemplaza con el logo del organizador
-  },
+  }
+];
+
+const partners = [
   {
     name: "Asociación Peruana de Ingeniería Hidráulica Ambiental",
     logo: "/images.jpg", // Reemplaza con el logo del organizador
