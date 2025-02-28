@@ -14,12 +14,13 @@ const Home = () => {
 
       {/* Sección de Información */}
       <section style={styles.infoSection}>
-        <h2 style={styles.sectionTitle}>VII Congreso Nacional del Agua - VII CONA PERÚ 2025</h2>
+        <h2 className="belleza-regular" style={styles.sectionTitle}>VII Congreso Nacional del Agua - VII CONA PERÚ 2025 <br /> “Ciencia e Ingeniería del Agua en un entorno Cambiante”</h2>
+        <p className="glegoo-bold">DEL 4 AL 8 DE NOVIEMBRE DE 2025, Local CIP Departamental Ica.</p>
 
         {/* Objetivo General */}
         <div style={styles.subSection}>
-          <h3 style={styles.subTitle}>Objetivo General</h3>
-          <p style={styles.text}>
+          <h3 className="inconsolata" style={styles.subTitle}>Objetivo General</h3>
+          <p className="glegoo-regular" style={styles.text}>
             Los acontecimientos de los últimos años nos presentan un panorama global donde lo único cierto es un notorio cambio; entre crisis financieras, pandemia global, una guerra con efectos no previstos y el cambio climático, nos retan a científicos, ingenieros, investigadores y sociedad en conjunto a abordar un entorno especialmente incierto. ¿Cómo se podrá planificar y diseñar en este entorno?
             Este evento académico se realiza con el objetivo de difundir y compartir conocimientos relacionados con la gestión de los recursos hídricos desde la teoría a la práctica, en sus diferentes disciplinas, escalas y dimensiones, fortaleciendo el puente entre la ciencia y la ingeniería para enfrentar este escenario
           </p>
@@ -27,8 +28,8 @@ const Home = () => {
 
         {/* Objetivos Específicos */}
         <div style={styles.subSection}>
-          <h3 style={styles.subTitle}>Objetivos Específicos</h3>
-          <ul style={styles.list}>
+          <h3 className="inconsolata" style={styles.subTitle}>Objetivos Específicos</h3>
+          <ul className="glegoo-regular" style={styles.list}>
             <li style={styles.listItem}>Crear un espacio de diálogo e intercambio de experiencias en la aplicación de ciencia y técnicas para enfrentar eventos disruptivos asociados al agua, que afectan la calidad de vida en el Perú.</li>
             <li style={styles.listItem}>Difundir enfoques, técnicas y conceptos innovadores mediante charlas magistrales.</li>
             <li style={styles.listItem}>Fortalecer el nexo Agua – Energía – Alimentos.</li>
@@ -36,8 +37,8 @@ const Home = () => {
         </div>
 
         <div style={styles.subSection}>
-          <h3 style={styles.subTitle}>Publico Objetivo</h3>
-          <p style={styles.text}>
+          <h3 className="inconsolata" style={styles.subTitle}>Publico Objetivo</h3>
+          <p className="glegoo-regular" style={styles.text}>
             Siendo el agua un recurso vital, es transversal a las diferentes actividades económicas y ecosistemas de nuestra sociedad, están llamados a participar todos los científicos, profesionales y técnicos trabajando con los recursos hídricos, en sus diferentes dimensiones: gestión pública, ciencias de la tierra, energía, salud, sociedad y arte, entre otros. Además de estudiantes y todas las personas interesadas en el tema del agua.
           </p>
         </div>
@@ -113,7 +114,7 @@ const styles = {
   main: {
     backgroundColor: "#fff",
     minWidth: "320px",
-    width: "80%",
+    width: "90%",
     maxWidth: "1200px",
     margin: "0 auto",
     boxShadow: "0 0 20px #ccc",
@@ -136,16 +137,16 @@ const styles = {
   },
   sectionTitle: {
     fontSize: "2.5rem",
-    color: "#007BFF", // Azul principal
     marginBottom: "1.5rem",
+    textShadow: "rgb(17 25 51) 0 0 8px",
   },
   subSection: {
     marginBottom: "2rem",
   },
   subTitle: {
     fontSize: "2rem",
-    color: "#28A745", // Verde
     marginBottom: "1rem",
+    textAlign: "start",
   },
   text: {
     fontSize: "1rem",

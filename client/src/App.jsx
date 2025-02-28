@@ -10,15 +10,17 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <div style={{ minHeight: "100vh", backgroundColor: "#F8FAFC" }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/acerca" element={<About />} />
-          <Route path="/servicios" element={<Services />} />
-          <Route path="/contacto" element={<Contact />} />
-        </Routes>
+      <div>
+        <div style={{ minHeight: "100vh", backgroundColor: "#F8FAFC" }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/acerca" element={<About />} />
+            <Route path="/servicios" element={<Services />} />
+            <Route path="/contacto" element={<Contact />} />
+          </Routes>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </Router>
   );
 }
