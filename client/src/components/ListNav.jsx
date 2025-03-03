@@ -26,10 +26,10 @@ const ListNav = () => {
         <ListItemButton component="a" disabled sx={{ bgcolor: "blue", color: "white" }} >
           <ListItemText primary="Contacto" />
         </ListItemButton>
-        <ListItemButton component="a" href="mailto:gonzalosh01@gmail.com">
+        <ListItemButton component="a" href="mailto:viicona2025@gmail.com">
           <ListItemText primary="📧 Correo" />
         </ListItemButton>
-        <ListItemButton component="a" href="https://wa.me/+51912151197">
+        <ListItemButton component="a" href="https://wa.me/+51983688826">
           <ListItemText primary="📱WhatsApp" />
         </ListItemButton>
       </Box>
