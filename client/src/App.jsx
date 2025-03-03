@@ -1,28 +1,36 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Contact from "./pages/Contact";
-import Footer from "./components/Footer"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Box } from '@mui/material'
 
-function App() {
+// * Pages
+import Home from './pages/Home'
+import Inscriptions from './pages/Inscriptions'
+import Committe from './pages/Committe'
+import ThematicAxes from './pages/ThematicAxes'
+import Schedule from './pages/Schedule'
+
+// * Components
+import Header from './components/Header'
+import Footer from './components/Footer'
+
+const App = () => {
+
   return (
-    <Router>
-      <Navbar />
-      <div>
-        <div style={{ minHeight: "100vh", backgroundColor: "#F8FAFC" }}>
+    <>
+      <Router>
+        <Header />
+        <Box component="main" sx={{ minHeight: 'calc(100vh - 120px)', pt: 8 }}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/acerca" element={<About />} />
-            <Route path="/servicios" element={<Services />} />
-            <Route path="/contacto" element={<Contact />} />
+            <Route path="/inscriptions" element={<Inscriptions />} />
+            <Route path="/committe" element={<Committe />} />
+            <Route path="/thematic-axes" element={<ThematicAxes />} />
+            <Route path="/schedule" element={<Schedule />} />
           </Routes>
-        </div>
+        </Box>
         <Footer />
-      </div>
-    </Router>
-  );
+      </Router>
+    </>
+  )
 }
 
-export default App;
+export default App

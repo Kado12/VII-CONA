@@ -1,198 +1,139 @@
+import React from "react"
+import { AppBar, Toolbar, Typography, Link, Box, Avatar, List, ListItem, ListItemButton, ListItemText, Divider, Card, CardContent, CardMedia, CardActionArea } from '@mui/material';
+import Grid from '@mui/material/Grid2';
 
+
+import Slider from "../components/Slider"
+import ListNav from "../components/ListNav";
+import './Home.css'
 
 const Home = () => {
+
   return (
-    <div style={styles.main}>
-      {/* Imagen de Portada */}
-      <figure style={styles.figure}>
-        <img
-          src="/Portada.jpg" // Reemplaza con tu imagen
-          alt="Portada"
-          style={styles.image}
-        />
-      </figure>
-
-      {/* Sección de Información */}
-      <section style={styles.infoSection}>
-        <h2 className="belleza-regular" style={styles.sectionTitle}>VII Congreso Nacional del Agua - VII CONA PERÚ 2025 <br /> “Ciencia e Ingeniería del Agua en un entorno Cambiante”</h2>
-        <p className="glegoo-bold">DEL 4 AL 8 DE NOVIEMBRE DE 2025, Local CIP Departamental Ica.</p>
-
-        {/* Objetivo General */}
-        <div style={styles.subSection}>
-          <h3 className="inconsolata" style={styles.subTitle}>Objetivo General</h3>
-          <p className="glegoo-regular" style={styles.text}>
-            Los acontecimientos de los últimos años nos presentan un panorama global donde lo único cierto es un notorio cambio; entre crisis financieras, pandemia global, una guerra con efectos no previstos y el cambio climático, nos retan a científicos, ingenieros, investigadores y sociedad en conjunto a abordar un entorno especialmente incierto. ¿Cómo se podrá planificar y diseñar en este entorno?
-            Este evento académico se realiza con el objetivo de difundir y compartir conocimientos relacionados con la gestión de los recursos hídricos desde la teoría a la práctica, en sus diferentes disciplinas, escalas y dimensiones, fortaleciendo el puente entre la ciencia y la ingeniería para enfrentar este escenario
-          </p>
-        </div>
-
-        {/* Objetivos Específicos */}
-        <div style={styles.subSection}>
-          <h3 className="inconsolata" style={styles.subTitle}>Objetivos Específicos</h3>
-          <ul className="glegoo-regular" style={styles.list}>
-            <li style={styles.listItem}>Crear un espacio de diálogo e intercambio de experiencias en la aplicación de ciencia y técnicas para enfrentar eventos disruptivos asociados al agua, que afectan la calidad de vida en el Perú.</li>
-            <li style={styles.listItem}>Difundir enfoques, técnicas y conceptos innovadores mediante charlas magistrales.</li>
-            <li style={styles.listItem}>Fortalecer el nexo Agua – Energía – Alimentos.</li>
-          </ul>
-        </div>
-
-        <div style={styles.subSection}>
-          <h3 className="inconsolata" style={styles.subTitle}>Publico Objetivo</h3>
-          <p className="glegoo-regular" style={styles.text}>
-            Siendo el agua un recurso vital, es transversal a las diferentes actividades económicas y ecosistemas de nuestra sociedad, están llamados a participar todos los científicos, profesionales y técnicos trabajando con los recursos hídricos, en sus diferentes dimensiones: gestión pública, ciencias de la tierra, energía, salud, sociedad y arte, entre otros. Además de estudiantes y todas las personas interesadas en el tema del agua.
-          </p>
-        </div>
-      </section>
-
-      {/* Sección de Organizadores */}
-      <section style={styles.organizersSection}>
-        <h2 style={styles.sectionTitle}>Organizadores</h2>
-        <div style={styles.organizersGrid}>
-          {organizers.map((organizer, index) => (
-            <div key={index} style={styles.organizerCard}>
-              <img src={organizer.logo} alt={organizer.name} style={styles.organizerLogo} />
-              <p style={styles.organizerName}>{organizer.name}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Sección de Organizadores */}
-      <section style={styles.organizersSection}>
-        <h2 style={styles.sectionTitle}>Patrocinadores</h2>
-        <div style={styles.organizersGrid}>
-          {partners.map((organizer, index) => (
-            <div key={index} style={styles.organizerCard}>
-              <img src={organizer.logo} alt={organizer.name} style={styles.organizerLogo} />
-              <p style={styles.organizerName}>{organizer.name}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Video Local */}
-      <section style={styles.videoSection}>
-        <h2 style={styles.videoTitle}>Conoce Más Sobre Nosotros</h2>
-        <video
-          style={styles.video}
-          controls
-          poster="https://via.placeholder.com/800x1200" // Miniatura del video (opcional)
-        >
-          <source src="/Video.mp4" type="video/mp4" />
-          Tu navegador no soporta el elemento de video.
-        </video>
-      </section>
-
+    <div>
+      <Slider />
+      <Box component="section" sx={{ p: 2, bgcolor: '#56bfb6ff', textAlign: 'center', color: 'white', fontWeight: 'bold', border: 1, borderColor: '#a0bfff', borderStyle: 'solid' }}>
+        <Typography variant="p" component="div" sx={{ flexGrow: 1, textShadow: '0px 0px 5px #331' }}>
+          Las pre-inscripciones están abiertas. ¡No te quedes sin tu lugar!
+        </Typography>
+      </Box>
+      <Box component="section">
+        <Grid container spacing={2}>
+          <Grid size={{ xs: 12, sm: 4, md: 3 }} sx={{ transition: 'all 0.3s', padding: 1 }}>
+            <ListNav />
+          </Grid>
+          <Grid size={{ xs: 12, sm: 8, md: 9 }}>
+            <Box component="section" sx={{ p: 2 }}>
+              <Typography variant="h5" component="div" sx={{ flexGrow: 1, textAlign: 'center', px: 2, fontWeight: 'bold', mb: 2 }}>
+                VII CONGRESO NACIONAL DEL AGUA - VII CONA PERÚ 2025
+              </Typography>
+              <Typography variant="p" component="div" sx={{ flexGrow: 1, textAlign: 'justify', px: 2 }}>
+                Según el Informe ONU agua del 2024, “Actualmente casi la mitad de la población mundial sufre escasez de agua al menos durante parte del año. Una cuarta parte de la población mundial se enfrenta a niveles de estrés hídrico extremadamente altos y utiliza más del 80% de su suministro renovable anual de agua dulce. Y se prevé que el cambio climático intensifique el ciclo hídrico global y que siga aumentando la frecuencia y la gravedad de las sequías e inundaciones”.
+                Por eso que debemos entender que la problemática del agua es mucho más, está vinculada directamente con la seguridad alimentaria, el progreso, la salud, la paz y la sostenibilidad del planeta.
+                Nuestro país ya presenta impactos por las variaciones climáticas globales, la mas significativa es el deshielo de los glaciares en la cordillera de los Andes principalmente, lo cual crea un desbalance hídrico en todas las cuencas que alimenta hacia el pacifico o el atlántico. Pero, además las variaciones climáticas cada vez con más frecuencia originan precipitaciones en la cuenca baja, es decir en la zona de costa peruana con impactos enormes en la ciudadanía como los que tenemos en estos días. Y todo ello requiere estudio e investigaciones.
+                Cada dos años, el espacio que sirve de encuentro para las reflexiones y propuestas a la problemática de los recursos hídricos es el Congreso Nacional del Agua CONA, que poco a poco en cada edición, se ha ido ganando el reconocimiento nacional e internacional, por su calidad y garantía de profesionalismos. Pretendemos mantener el nivel académico y profesional y fortalecerlo como espacio de articulación de análisis y propuestas.
+                En esa medida, es que presentamos a ustedes el inicio de los trabajos para el VII Congreso Nacional del Agua – VII CONA PERU 2025, evento que realizaremos en la ciudad de Ica entre el 4 y el 8 de noviembre del 2025, teniendo como sede del evento el Hotel las Dunas de Ica.
+              </Typography>
+              <Divider sx={{ m: 2 }} />
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: 'left', px: 2, fontWeight: 'bold', mb: 1 }}>
+                Objetivos
+              </Typography>
+              <Typography variant="p" component="div" sx={{ flexGrow: 1, textAlign: 'justify', px: 4 }}>
+                • Proporcionar un lugar de encuentro para compartir experiencias, promover el debate y presentar nuevos conocimientos, resultados de investigaciones y nuevas tecnologías en el campo de las ciencias del agua en nuestro país y el mundo. <br />
+                • Debatir y promover estrategias y políticas de gestión del agua utilizando enfoques sistémicos.
+              </Typography>
+              <Divider sx={{ m: 2 }} />
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: 'left', px: 2, fontWeight: 'bold', mb: 1 }}>
+                Organizadores y Patrocinadores
+              </Typography>
+              <Box component="section" sx={{ p: 2, display: 'flex', justifyContent: 'space-around', alignItems: 'center', gap: 5, flexWrap: 'wrap' }}>
+                <Card sx={{ width: 250, height: 300 }} className="card">
+                  <CardActionArea className="card-content" href="https://www.unica.edu.pe/" sx={{ width: 250, height: 300, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                    <CardMedia
+                      component="img"
+                      height="150"
+                      width="150"
+                      image="./UNICA.png"
+                      alt="Logo Universidad Nacional San Luis Gonzaga de Ica"
+                      className="img-card"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h6" component="div">
+                        Universidad San Luis Gonzaga de Ica
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+                <Card sx={{ width: 250, height: 300 }} className="card">
+                  <CardActionArea className="card-content" href="https://fic.uni.edu.pe/" sx={{ width: 250, height: 300, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                    <CardMedia
+                      component="img"
+                      height="150"
+                      image="./UNI.png"
+                      alt="Logo Universidad Nacional San Luis Gonzaga de Ica"
+                      className="img-card"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h6" component="div">
+                        Facultad de Ingenieria Civil
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+                <Card sx={{ width: 250, height: 300 }} className="card">
+                  <CardActionArea className="card-content" href="https://www.apiha.org.pe/" sx={{ width: 250, height: 300, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                    <CardMedia
+                      component="img"
+                      height="150"
+                      image="./APIHA.png"
+                      alt="Logo Universidad Nacional San Luis Gonzaga de Ica"
+                      className="img-card"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h6" component="div">
+                        Asociación Peruana De Ingeniería Hidráulica y Ambiental
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+                <Card sx={{ width: 250, height: 300 }} className="card">
+                  <CardActionArea className="card-content" href="https://www.cip.org.pe/" sx={{ width: 250, height: 300, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                    <CardMedia
+                      component="img"
+                      height="150"
+                      image="./CIP.png"
+                      alt="Logo Universidad Nacional San Luis Gonzaga de Ica"
+                      className="img-card"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h6" component="div">
+                        Colegio de Ingenieros del Perú
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Box>
+              <section style={styles.videoSection}>
+                <h2 style={styles.videoTitle}>Conoce Más Sobre Nosotros</h2>
+                <video
+                  style={styles.video}
+                  controls
+                  poster="https://via.placeholder.com/800x1200" // Miniatura del video (opcional)
+                >
+                  <source src="/Video.mp4" type="video/mp4" />
+                  Tu navegador no soporta el elemento de video.
+                </video>
+              </section>
+            </Box>
+          </Grid>
+        </Grid>
+      </Box>
     </div>
-  );
-};
-
-// Datos de los organizadores
-const organizers = [
-  {
-    name: "Universidad Nacional San Luis Gonzaga de Ica",
-    logo: "/unica.png", // Reemplaza con el logo del organizador
-  },
-  {
-    name: "Facultad de Ingeniería Civil UNICA",
-    logo: "/UNI.png", // Reemplaza con el logo del organizador
-  }
-];
-
-const partners = [
-  {
-    name: "Asociación Peruana de Ingeniería Hidráulica Ambiental",
-    logo: "/images.jpg", // Reemplaza con el logo del organizador
-  },
-  {
-    name: "Colegio de Ingenieros del Perú",
-    logo: "/CIP.png", // Reemplaza con el logo del organizador
-  },
-];
+  )
+}
 
 const styles = {
-  main: {
-    backgroundColor: "#fff",
-    minWidth: "320px",
-    width: "90%",
-    maxWidth: "1200px",
-    margin: "0 auto",
-    boxShadow: "0 0 20px #ccc",
 
-  },
-  figure: {
-    margin: 0,
-    overflow: "hidden",
-    boxShadow: "0 2px 10px black",
-  },
-  image: {
-    width: "100%",
-    height: "auto",
-    display: "block",
-  },
-  infoSection: {
-    padding: "2rem",
-    backgroundColor: "#F8FAFC",
-    textAlign: "center",
-  },
-  sectionTitle: {
-    fontSize: "2.5rem",
-    marginBottom: "1.5rem",
-    textShadow: "rgb(17 25 51) 0 0 8px",
-  },
-  subSection: {
-    marginBottom: "2rem",
-  },
-  subTitle: {
-    fontSize: "2rem",
-    marginBottom: "1rem",
-    textAlign: "start",
-  },
-  text: {
-    fontSize: "1rem",
-    color: "#333",
-    lineHeight: "1.6",
-    textAlign: "justify"
-  },
-  list: {
-    listStyle: "disc",
-    paddingLeft: "1.5rem",
-    margin: 0,
-  },
-  listItem: {
-    fontSize: "1.1rem",
-    color: "#333",
-    lineHeight: "1.6",
-    textAlign: "left",
-  },
-  organizersSection: {
-    padding: "2rem",
-    backgroundColor: "#E5E7EB",
-    textAlign: "center",
-  },
-  organizersGrid: {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
-    gap: "1.5rem",
-    marginTop: "1rem",
-  },
-  organizerCard: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-  },
-  organizerLogo: {
-    width: "100px",
-    height: "100px",
-    borderRadius: "50%",
-    objectFit: "cover",
-    marginBottom: "0.5rem",
-  },
-  organizerName: {
-    fontSize: "1rem",
-    color: "#333",
-    fontWeight: "bold",
-  },
   videoSection: {
     padding: "2rem",
     textAlign: "center",
@@ -213,4 +154,4 @@ const styles = {
   },
 }
 
-export default Home;
+export default Home

@@ -1,0 +1,88 @@
+/* src/pages/Home.css */
+.my-swiper {
+  position: relative;
+  width: 100%;
+  max-width: 80%;
+  min-width: 320px;
+  max-height: 500px;
+  height: auto;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px #00165d;
+}
+
+.my-swiper .image-slider {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(.8) blur(2px);
+  /* Asegurar que las imágenes se ajusten correctamente */
+}
+
+.my-swiper .principal {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  min-height: 220px;
+
+  top: 0;
+  z-index: 1;
+  background-color: #40c9ff2e;
+}
+
+.principal .principal-grid {
+  padding: 10px;
+  color: #ffffff;
+  text-shadow: 0px 0px 15px #0a0155;
+}
+
+.principal-grid .principal-grid-item {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+.grid-item--date {
+  background-color: #56bfb6d6;
+  padding: 10px;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.principal-grid .principal-grid-item .grid-item--content {
+  width: 80%;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff;
+  transition: all .3s;
+
+  /* Color de los botones de navegación */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #1a00c2;
+  transition: all .3s;
+  /* Color de los botones de navegación */
+}
+
+.swiper-pagination-bullet {
+  background-color: #1976d2;
+  /* Color de los puntos de paginación */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff4081;
+  /* Color del punto activo */
+}
+
+.card .card-content .img-card {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
