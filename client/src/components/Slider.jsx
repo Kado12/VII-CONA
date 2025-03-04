@@ -69,7 +69,7 @@ const Slider = () => {
                       xl: '1.5rem', // Tamaño para pantallas muy grandes
                     }
                   }}>
-                    5 AL 8 DE NOVIEMBRE DE 2025 - Ica, Perú
+                    4 AL 8 DE NOVIEMBRE DE 2025 - Ica, Perú
                   </Typography>
                 </div>
                 <Typography variant="h6" component="div" sx={{
