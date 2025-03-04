@@ -81,7 +81,7 @@ const Slider = () => {
                     xl: '2rem', // Tamaño para pantallas muy grandes
                   }
                 }}>
-                  "CIENCIA E INGENIERÍA DEL AGUA EN UN ENTORNO CAMBIANTE"
+                  "AGUA PARA TODOS Y GESTIÓN SOSTENIBLE FRENTE AL CAMBIO GLOBAL"
                 </Typography>
               </div>
             </Grid>

@@ -21,6 +21,9 @@ const ListNav = () => {
         <ListItemButton component="a" href="/schedule">
           <ListItemText primary="Cronograma" />
         </ListItemButton>
+        <ListItemButton component="a" href="/seat">
+          <ListItemText primary="Sede" />
+        </ListItemButton>
       </Box>
       <Box sx={{ bgcolor: '#f0f0f0', borderRadius: 1, mt: 3 }}>
         <ListItemButton component="a" disabled sx={{ bgcolor: "blue", color: "white" }} >
