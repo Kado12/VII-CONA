@@ -47,8 +47,8 @@ const Home = () => {
                 Organizadores y Patrocinadores
               </Typography>
               <Box component="section" sx={{ p: 2, display: 'flex', justifyContent: 'space-around', alignItems: 'center', gap: 5, flexWrap: 'wrap' }}>
-                <Card sx={{ width: 250, height: 300 }} className="card">
-                  <CardActionArea className="card-content" href="https://www.unica.edu.pe/" sx={{ width: 250, height: 300, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                <Card sx={{ width: 250, height: 350 }} className="card">
+                  <CardActionArea className="card-content" href="https://www.unica.edu.pe/" sx={{ width: 250, height: 350, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                     <CardMedia
                       component="img"
                       height="150"
@@ -64,8 +64,8 @@ const Home = () => {
                     </CardContent>
                   </CardActionArea>
                 </Card>
-                <Card sx={{ width: 250, height: 300 }} className="card">
-                  <CardActionArea className="card-content" href="https://fic.uni.edu.pe/" sx={{ width: 250, height: 300, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                <Card sx={{ width: 250, height: 350 }} className="card">
+                  <CardActionArea className="card-content" href="https://fic.uni.edu.pe/" sx={{ width: 250, height: 350, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                     <CardMedia
                       component="img"
                       height="150"
@@ -80,8 +80,8 @@ const Home = () => {
                     </CardContent>
                   </CardActionArea>
                 </Card>
-                <Card sx={{ width: 250, height: 300 }} className="card">
-                  <CardActionArea className="card-content" href="https://www.apiha.org.pe/" sx={{ width: 250, height: 300, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                <Card sx={{ width: 250, height: 350 }} className="card">
+                  <CardActionArea className="card-content" href="https://www.apiha.org.pe/" sx={{ width: 250, height: 350, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                     <CardMedia
                       component="img"
                       height="150"
@@ -96,8 +96,8 @@ const Home = () => {
                     </CardContent>
                   </CardActionArea>
                 </Card>
-                <Card sx={{ width: 250, height: 300 }} className="card">
-                  <CardActionArea className="card-content" href="https://www.cip.org.pe/" sx={{ width: 250, height: 300, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                <Card sx={{ width: 250, height: 350 }} className="card">
+                  <CardActionArea className="card-content" href="https://www.cip.org.pe/" sx={{ width: 250, height: 350, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                     <CardMedia
                       component="img"
                       height="150"
@@ -107,7 +107,7 @@ const Home = () => {
                     />
                     <CardContent>
                       <Typography gutterBottom variant="h6" component="div">
-                        Colegio de Ingenieros del Perú
+                        Consejo Departamental de Lima <br />Capitulo de Ingenieros Civiles - Ica
                       </Typography>
                     </CardContent>
                   </CardActionArea>

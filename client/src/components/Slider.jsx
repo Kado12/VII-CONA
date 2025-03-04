@@ -98,20 +98,7 @@ const Slider = () => {
                 }}>
                   ORGANIZADO POR:
                 </Typography>
-                <div style={{ display: 'flex', gap: 2, justifyContent: 'center', alignItems: 'center' }}>
-                  <Avatar variant="square" alt="Remy Sharp" src="./CIP.png" sx={{ width: { md: 80, sm: 60, xs: 50 }, height: { md: 80, sm: 60, xs: 50 }, bgcolor: "#ffffff99", borderRadius: 2, margin: { xs: "1px", sm: "5px" } }} />
-                  <Typography variant="h6" component="div" sx={{
-                    flexGrow: 1, fontSize: {
-                      xs: '.5rem', // Tamaño para pantallas muy pequeñas (móviles)
-                      sm: '.8rem',   // Tamaño para pantallas pequeñas (móviles/tablets)
-                      md: '1rem', // Tamaño para pantallas medianas (tablets/desktops)
-                      lg: '1.5rem',   // Tamaño para pantallas grandes (desktops)
-                      xl: '1.8rem', // Tamaño para pantallas muy grandes
-                    }, display: { xs: "none", sm: "block" }
-                  }}>
-                    Colegio de Ingeniero del Perú
-                  </Typography>
-                </div>
+
                 <div style={{ display: 'flex', gap: 2, justifyContent: 'center', alignItems: 'center' }}>
                   <Avatar variant="square" alt="Remy Sharp" src="./UNICA.png" sx={{ width: { md: 80, sm: 60, xs: 50 }, height: { md: 80, sm: 60, xs: 50 }, bgcolor: "#ffffff99", borderRadius: 2, margin: { xs: "1px", sm: "5px" } }} />
 
@@ -155,6 +142,20 @@ const Slider = () => {
                     }, display: { xs: "none", sm: "block" }
                   }}>
                     APIHA
+                  </Typography>
+                </div>
+                <div style={{ display: 'flex', gap: 2, justifyContent: 'center', alignItems: 'center' }}>
+                  <Avatar variant="square" alt="Remy Sharp" src="./CIP.png" sx={{ width: { md: 80, sm: 60, xs: 50 }, height: { md: 80, sm: 60, xs: 50 }, bgcolor: "#ffffff99", borderRadius: 2, margin: { xs: "1px", sm: "5px" } }} />
+                  <Typography variant="h6" component="div" sx={{
+                    flexGrow: 1, fontSize: {
+                      xs: '.5rem', // Tamaño para pantallas muy pequeñas (móviles)
+                      sm: '.8rem',   // Tamaño para pantallas pequeñas (móviles/tablets)
+                      md: '1rem', // Tamaño para pantallas medianas (tablets/desktops)
+                      lg: '1.5rem',   // Tamaño para pantallas grandes (desktops)
+                      xl: '1.8rem', // Tamaño para pantallas muy grandes
+                    }, display: { xs: "none", sm: "block" }
+                  }}>
+                    Colegio de Ingeniero del Perú
                   </Typography>
                 </div>
               </div>
