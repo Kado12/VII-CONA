@@ -27,7 +27,7 @@ const Home = () => {
               <Typography variant="h5" component="div" sx={{ flexGrow: 1, textAlign: 'center', px: 2, fontWeight: 'bold', mb: 2 }}>
                 VII CONGRESO NACIONAL DEL AGUA - VII CONA PERÚ 2025
               </Typography>
-              <Typography variant="p" component="div" sx={{ flexGrow: 1, textAlign: 'justify', px: 2 }}>
+              <Typography variant="body2" component="div" sx={{ flexGrow: 1, textAlign: 'justify', px: 2 }}>
                 Según el Informe ONU agua del 2024, “Actualmente casi la mitad de la población mundial sufre escasez de agua al menos durante parte del año. Una cuarta parte de la población mundial se enfrenta a niveles de estrés hídrico extremadamente altos y utiliza más del 80% de su suministro renovable anual de agua dulce. Y se prevé que el cambio climático intensifique el ciclo hídrico global y que siga aumentando la frecuencia y la gravedad de las sequías e inundaciones”.
                 Por eso que debemos entender que la problemática del agua es mucho más, está vinculada directamente con la seguridad alimentaria, el progreso, la salud, la paz y la sostenibilidad del planeta.
                 Nuestro país ya presenta impactos por las variaciones climáticas globales, la mas significativa es el deshielo de los glaciares en la cordillera de los Andes principalmente, lo cual crea un desbalance hídrico en todas las cuencas que alimenta hacia el pacifico o el atlántico. Pero, además las variaciones climáticas cada vez con más frecuencia originan precipitaciones en la cuenca baja, es decir en la zona de costa peruana con impactos enormes en la ciudadanía como los que tenemos en estos días. Y todo ello requiere estudio e investigaciones.
@@ -38,7 +38,7 @@ const Home = () => {
               <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: 'left', px: 2, fontWeight: 'bold', mb: 1 }}>
                 Objetivos
               </Typography>
-              <Typography variant="p" component="div" sx={{ flexGrow: 1, textAlign: 'justify', px: 4 }}>
+              <Typography variant="body2" component="div" sx={{ flexGrow: 1, textAlign: 'justify', px: 4 }}>
                 • Proporcionar un lugar de encuentro para compartir experiencias, promover el debate y presentar nuevos conocimientos, resultados de investigaciones y nuevas tecnologías en el campo de las ciencias del agua en nuestro país y el mundo. <br />
                 • Debatir y promover estrategias y políticas de gestión del agua utilizando enfoques sistémicos.
               </Typography>

@@ -72,11 +72,11 @@ const Committe = () => {
       position: "ALCALDE DE LA MUNICIPALIDAD PROVINCIAL DE ICA"
     },
     {
-      name: "D9R:.0LEONCIO HUAYLLANI TAYPE",
+      name: "DR.LEONCIO HUAYLLANI TAYPE",
       position: "PRESIDENTE DEL CONSEJO DE CUENCA TAMBO SANTIAGO ICA"
     },
     {
-      name: "PRESIDENTE DEL CONSEJO DE CUENCA TAMBO SANTIAGO ICA",
+      name: "ING. EDWIN CHAVARRI CARAHUATAY",
       position: "DECANO DEL CIP - CONSEJO DEPARTAMENTAL DE LIMA"
     },
     {
