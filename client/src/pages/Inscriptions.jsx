@@ -99,7 +99,7 @@ const Inscriptions = () => {
                     <TimelineSeparator>
                       <TimelineDot />
                     </TimelineSeparator>
-                    <TimelineContent>Enviar la captura del pago, en cualquiera de nuestros contactos, Gmail o WhatsApp</TimelineContent>
+                    <TimelineContent>Completar el siguiente formulario: https://forms.gle/gNNr9DUv3EeoNUYf9</TimelineContent>
                   </TimelineItem>
                 </Timeline>
               </Box>
