@@ -69,7 +69,7 @@ const Seat = () => {
               </Box>
               <Box component="section" sx={{ p: 2 }}>
                 <section style={styles.videoSection}>
-                  <iframe width="90%" height="350" src="https://www.youtube.com/embed/ZFwJiGAaDpg?si=oW2oXTMA-pwzhf3w" title="YouTube video player" style={styles.video} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <iframe width="90%" height="350" src="https://www.youtube.com/embed/ZFwJiGAaDpg?si=oW2oXTMA-pwzhf3w" title="YouTube video player" style={styles.video} frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 </section>
               </Box>
             </Grid>
