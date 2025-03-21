@@ -17,7 +17,6 @@ const createEvent = (time, title, content, image) => {
 }
 
 const rows = [
-  createEvent('10 de abril 2025', 'Proximos eventos.....', 'Contenido del evento...', './Portada_1.jpg'),
   createEvent('22 de marzo 2025', 'Los Rios en Movimiento y el diseño, construcción y mantenimiento de puentes', 'Estimados colegas y público en general, como parte de las actividades previas  por el VII Congreso Nacional del Agua la Facultad de Ingenieria Civil, junto a la APIHA, estaremos llevando a cabo un Conversatorio el dia sabado 22 de marzo 2025 a partir de las 3pm en las instalaciones del Auditorio principal del CIP - ICA. Esperamos su participacion al igual  hacemos extensiva la invitacion a los demas profesionales y estudiantes de la ÚNICA y universidades privadas.', './Portada_1.jpg')
 ];
 
