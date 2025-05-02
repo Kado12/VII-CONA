@@ -9,6 +9,7 @@ import ThematicAxes from './pages/ThematicAxes'
 import Schedule from './pages/Schedule'
 import Seat from './pages/Seat'
 import Events from './pages/Events'
+import Summary from './pages/Summary'
 
 // * Components
 import Header from './components/Header'
@@ -29,6 +30,7 @@ const App = () => {
             <Route path="/schedule" element={<Schedule />} />
             <Route path="/seat" element={<Seat />} />
             <Route path="/news-events" element={<Events />} />
+            <Route path="/summary" element={<Summary />} />
           </Routes>
         </Box>
         <Footer />
