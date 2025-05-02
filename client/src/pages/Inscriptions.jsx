@@ -55,8 +55,8 @@ const Inscriptions = () => {
                     <TableHead sx={{ bgcolor: 'rgb(98, 98, 132)' }}>
                       <TableRow sx={{ color: 'white', fontWeight: 'bold' }}>
                         <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>CATEGORÍA</TableCell>
-                        <TableCell align="center" sx={{ color: 'white', fontWeight: 'bold' }}>INSCRIPCION TEMPRANA<br />(04 MARZO - 04 MAYO 2025)</TableCell>
-                        <TableCell align="center" sx={{ color: 'white', fontWeight: 'bold' }}>INSCRIPCION NORMAL<br />(05 MAYO - 3 NOV. 2025)</TableCell>
+                        <TableCell align="center" sx={{ color: 'white', fontWeight: 'bold' }}>INSCRIPCION TEMPRANA<br />(04 MARZO - 07 JUNIO 2025)</TableCell>
+                        <TableCell align="center" sx={{ color: 'white', fontWeight: 'bold' }}>INSCRIPCION NORMAL<br />(08 JUNIO - 3 NOV. 2025)</TableCell>
                         <TableCell align="center" sx={{ color: 'white', fontWeight: 'bold' }}>INSCIPCION AL INICIO DEL EVENTO<br />(DESDE 4 NOVIEMBRE 2025)</TableCell>
                       </TableRow>
                     </TableHead>
@@ -99,7 +99,7 @@ const Inscriptions = () => {
                     <TimelineSeparator>
                       <TimelineDot />
                     </TimelineSeparator>
-                    <TimelineContent>Completar el siguiente formulario: <a href="https://forms.gle/gNNr9DUv3EeoNUYf9" style={{color:"red", textDecoration: "none", fontWeight:"bold"}}>Inscripción VII CONA</a></TimelineContent>
+                    <TimelineContent>Completar el siguiente formulario: <a href="https://forms.gle/gNNr9DUv3EeoNUYf9" style={{ color: "red", textDecoration: "none", fontWeight: "bold" }}>Inscripción VII CONA</a></TimelineContent>
                   </TimelineItem>
                 </Timeline>
               </Box>
