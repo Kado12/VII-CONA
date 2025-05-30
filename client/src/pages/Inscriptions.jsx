@@ -93,7 +93,7 @@ const Inscriptions = () => {
                       <TimelineDot />
                       <TimelineConnector />
                     </TimelineSeparator>
-                    <TimelineContent>Hacer el pago mediante BCP: 380-05755648-0-47</TimelineContent>
+                    <TimelineContent>Hacer el pago mediante BCP: "380-05755648-0-47" - CCI: "00238010575564804742"</TimelineContent>
                   </TimelineItem>
                   <TimelineItem>
                     <TimelineSeparator>
