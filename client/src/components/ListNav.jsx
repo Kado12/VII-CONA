@@ -38,8 +38,17 @@ const ListNav = () => {
         <ListItemButton component="a" href="mailto:viicona2025@gmail.com">
           <ListItemText primary="📧 Correo" />
         </ListItemButton>
+        <ListItemButton component="a" href="mailto:hbenitor@gmail.com">
+          <ListItemText primary="📧 Correo Consultas" />
+        </ListItemButton>
         <ListItemButton component="a" href="https://wa.me/+51983688826">
-          <ListItemText primary="📱WhatsApp" />
+          <ListItemText primary="📱WhatsApp Consultas" />
+        </ListItemButton>
+        <ListItemButton component="a" href="https://wa.me/+51959847603">
+          <ListItemText primary="📱WhatsApp Consultas" />
+        </ListItemButton>
+        <ListItemButton component="a" href="https://wa.me/+51956605580">
+          <ListItemText primary="📱WhatsApp Consultas" />
         </ListItemButton>
       </Box>
     </>
