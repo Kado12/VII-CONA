@@ -42,7 +42,7 @@ const Summary = () => {
                       <TimelineDot />
                       <TimelineConnector />
                     </TimelineSeparator>
-                    <TimelineContent>Terminado su resumen ingresar al siguiente <a href="https://forms.gle/gNNr9DUv3EeoNUYf9" style={{ color: "red", textDecoration: "none", fontWeight: "bold" }}>Formulario</a> para subir sus datos</TimelineContent>
+                    <TimelineContent>Terminado su resumen ingresar al siguiente <a href="https://forms.gle/qDhKPA9tdD7aT7C18" style={{ color: "red", textDecoration: "none", fontWeight: "bold" }}>Formulario</a> para subir sus datos</TimelineContent>
                   </TimelineItem>
                   <TimelineItem>
                     <TimelineSeparator>

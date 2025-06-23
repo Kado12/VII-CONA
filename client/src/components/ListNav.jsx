@@ -42,13 +42,13 @@ const ListNav = () => {
           <ListItemText primary="📧 Correo Consultas" />
         </ListItemButton>
         <ListItemButton component="a" href="https://wa.me/+51983688826">
-          <ListItemText primary="📱WhatsApp Consultas" />
+          <ListItemText primary="📱WhatsApp Consultas 1" />
         </ListItemButton>
         <ListItemButton component="a" href="https://wa.me/+51959847603">
-          <ListItemText primary="📱WhatsApp Consultas" />
+          <ListItemText primary="📱WhatsApp Consultas 2" />
         </ListItemButton>
         <ListItemButton component="a" href="https://wa.me/+51956605580">
-          <ListItemText primary="📱WhatsApp Consultas" />
+          <ListItemText primary="📱WhatsApp Consultas 3" />
         </ListItemButton>
       </Box>
     </>
