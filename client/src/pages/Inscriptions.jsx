@@ -25,8 +25,8 @@ const createData = (category, pre_inscription, inscription, post_inscription) =>
 const rows = [
   createData('PROFESIONALES', 'S/300.00', 'S/350.00', 'S/400.00'),
   createData('PROFESIONALES PONENTES', 'S/250.00', 'S/300.00', 'S/350.00'),
-  createData('ESTUDIANTES', 'S/100.00', 'S/150.00', 'S/175.00'),
-  createData('ESTUDIANTES PONENTES', 'S/75.00', 'S/100.00', 'S/125.00')
+  createData('ESTUDIANTES', 'S/100.00', 'S/150.00', 'S/200.00'),
+  createData('ESTUDIANTES PONENTES', 'S/75.00', 'S/100.00', 'S/150.00')
 ];
 
 const Inscriptions = () => {
@@ -55,8 +55,8 @@ const Inscriptions = () => {
                     <TableHead sx={{ bgcolor: 'rgb(98, 98, 132)' }}>
                       <TableRow sx={{ color: 'white', fontWeight: 'bold' }}>
                         <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>CATEGORÍA</TableCell>
-                        <TableCell align="center" sx={{ color: 'white', fontWeight: 'bold' }}>INSCRIPCION TEMPRANA<br />(04 MARZO - 30 JUNIO 2025)</TableCell>
-                        <TableCell align="center" sx={{ color: 'white', fontWeight: 'bold' }}>INSCRIPCION NORMAL<br />(01 JULIO - 3 NOV. 2025)</TableCell>
+                        <TableCell align="center" sx={{ color: 'white', fontWeight: 'bold' }}>INSCRIPCION TEMPRANA<br />(04 MARZO - 30 JULIO 2025)</TableCell>
+                        <TableCell align="center" sx={{ color: 'white', fontWeight: 'bold' }}>INSCRIPCION NORMAL<br />(01 AGOSTO - 3 NOV. 2025)</TableCell>
                         <TableCell align="center" sx={{ color: 'white', fontWeight: 'bold' }}>INSCIPCION AL INICIO DEL EVENTO<br />(DESDE 4 NOVIEMBRE 2025)</TableCell>
                       </TableRow>
                     </TableHead>
