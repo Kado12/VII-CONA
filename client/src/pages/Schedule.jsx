@@ -24,6 +24,8 @@ const rows = [
   createData('Inicio de Inscripciones', '01 de setiembre 2025'),
   createData('Publicación del Programa oficial', '20 de setiembre 2025'),
   createData('Cierre del proceso de revisión y confirmación de ponentes', '30 de setiembre 2025'),
+  createData('Limite de presentación de Resúmenes Extendidos', '15 de octubre 2025'),
+  createData('Comunicación de Resúmenes aprobados y convocatoria a Resúmenes Extendidos', '20 de octubre 2025'),
   createData('Cursos-talleres precongreso', '04 de noviembre 2025'),
   createData('Congreso', '04 al 08 de noviembre 2025'),
   createData('Publicación y exposición de resultados ', '15 de diciembre 2025')
