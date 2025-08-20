@@ -12,6 +12,9 @@ const ListNav = () => {
         <ListItemButton component="a" href="/inscriptions">
           <ListItemText primary="Inscripciones" />
         </ListItemButton>
+        <ListItemButton component="a" href="/eco-hidro">
+          <ListItemText primary="Feria EcoHidro" />
+        </ListItemButton>
         <ListItemButton component="a" href="/committe">
           <ListItemText primary="Comité" />
         </ListItemButton>
