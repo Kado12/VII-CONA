@@ -1,16 +1,129 @@
-import React from "react"
-import { AppBar, Toolbar, Typography, Link, Box, Avatar, List, ListItem, ListItemButton, ListItemText, Divider, Card, CardContent, CardMedia, CardActionArea } from '@mui/material';
+import React, { useState, useEffect } from "react";
+import { AppBar, Toolbar, Typography, Link, Box, Avatar, List, ListItem, ListItemButton, ListItemText, Divider, Card, CardContent, CardMedia, CardActionArea, Modal, IconButton, Button } from '@mui/material';
 import Grid from '@mui/material/Grid2';
-
+import { Close, PlayCircle } from '@mui/icons-material';
 
 import Slider from "../components/Slider"
 import ListNav from "../components/ListNav";
 import './Home.css'
 
 const Home = () => {
+  const [openVideoModal, setOpenVideoModal] = useState(false);
+
+  // Abrir modal automáticamente al cargar la página
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setOpenVideoModal(true);
+    }, 2000); // Se abre después de 2 segundos
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleOpenVideoModal = () => {
+    setOpenVideoModal(true);
+  };
+
+  const handleCloseVideoModal = () => {
+    setOpenVideoModal(false);
+  };
 
   return (
     <div>
+      {/* Botón flotante para abrir el video */}
+      <Box sx={{ position: 'fixed', bottom: 20, right: 20, zIndex: 1000 }}>
+        <Button
+          variant="contained"
+          onClick={handleOpenVideoModal}
+          sx={{
+            backgroundColor: '#FF6B6B',
+            color: 'white',
+            borderRadius: '50%',
+            width: 60,
+            height: 60,
+            minWidth: 60,
+            boxShadow: '0 4px 8px rgba(0,0,0,0.3)',
+            '&:hover': {
+              backgroundColor: '#FF5252',
+              transform: 'scale(1.1)',
+            }
+          }}
+        >
+          <PlayCircle sx={{ fontSize: 30 }} />
+        </Button>
+      </Box>
+
+      {/* Modal con video vertical */}
+      <Modal
+        open={openVideoModal}
+        onClose={handleCloseVideoModal}
+        aria-labelledby="video-modal-title"
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <Box
+          sx={{
+            position: 'relative',
+            width: { xs: '95%', sm: '80%', md: '60%' },
+            maxWidth: 400,
+            bgcolor: 'background.paper',
+            borderRadius: 2,
+            boxShadow: 24,
+            overflow: 'hidden',
+            outline: 'none',
+          }}
+        >
+          {/* Botón de cierre */}
+          <IconButton
+            onClick={handleCloseVideoModal}
+            sx={{
+              position: 'absolute',
+              top: 8,
+              right: 8,
+              zIndex: 2,
+              backgroundColor: 'rgba(0,0,0,0.7)',
+              color: 'white',
+              '&:hover': {
+                backgroundColor: 'rgba(0,0,0,0.9)',
+              }
+            }}
+          >
+            <Close />
+          </IconButton>
+
+          {/* Video */}
+          <Box sx={{ width: '100%', position: 'relative' }}>
+            <video
+              style={{
+                width: '100%',
+                height: 'auto',
+                maxHeight: '70vh',
+                display: 'block',
+              }}
+              controls
+              autoPlay
+              muted
+              poster="https://via.placeholder.com/400x600"
+            >
+              <source src="/CONA REEL 4.mp4" type="video/mp4" />
+              Tu navegador no soporta el elemento de video.
+            </video>
+          </Box>
+
+          {/* Título opcional del video */}
+          <Box sx={{ p: 2, textAlign: 'center' }}>
+            <Typography variant="h6" component="h2" sx={{ color: '#007BFF' }}>
+              VII CONA Perú 2025
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Conoce más sobre nuestro congreso
+            </Typography>
+          </Box>
+        </Box>
+      </Modal>
+
       <Slider />
       <Box component="section" sx={{ p: 2, bgcolor: '#56bfb6ff', textAlign: 'center', color: 'white', fontWeight: 'bold', border: 1, borderColor: '#a0bfff', borderStyle: 'solid' }}>
         <Typography variant="p" component="div" sx={{ flexGrow: 1, textShadow: '0px 0px 5px #331' }}>

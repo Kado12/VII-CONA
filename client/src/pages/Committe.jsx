@@ -54,7 +54,7 @@ const Committe = () => {
     {
       img: "./CONA_PdteCapIC.jpg",
       title: "DR. ARTURO GODOY PEREYRA",
-      description: "PRESIDENTE - DECANO DE LA FACULTAD DE ING. CIVIL - UNICA",
+      description: "PRESIDENTE DEL CAPITULO DE INGENIERIA CIVIL - CIP C.D. ICA",
     },
     {
       img: "./CONA_RepresentanteCEIIN.jpg",
