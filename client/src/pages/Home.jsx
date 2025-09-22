@@ -117,8 +117,15 @@ const Home = () => {
             <Typography variant="h6" component="h2" sx={{ color: '#007BFF' }}>
               VII CONA Perú 2025
             </Typography>
+            <Typography variant="h6" component="h3" sx={{ color: '#007BFF' }}>
+              Comunicado
+            </Typography>
             <Typography variant="body2" color="text.secondary">
-              Conoce más sobre nuestro congreso
+              El comite de evaluacion de resumenes de investigacion se encuentra trabajando la lista final para autorizar a preparar el resumen extendido.
+              El cual se publicara el lunes 22 de setiembre 2025.
+            </Typography>
+            <Typography variant="h6" component="h3" sx={{ color: '#007BFF' }}>
+              La Comisión
             </Typography>
           </Box>
         </Box>
