@@ -31,7 +31,7 @@ const ListNav = () => {
           <ListItemText primary="Noticias y Eventos" />
         </ListItemButton>
         <ListItemButton component="a" href="/summary">
-          <ListItemText primary="Resumenes" />
+          <ListItemText primary="Resumenes Extendidos" />
         </ListItemButton>
       </Box>
       <Box sx={{ bgcolor: '#f0f0f0', borderRadius: 1, mt: 3 }}>

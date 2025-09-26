@@ -134,7 +134,7 @@ const Summary = () => {
             <Grid size={{ xs: 12, sm: 8, md: 9 }}>
               <Box component="section" sx={{ p: 2 }}>
                 <Typography variant="h5" component="div" sx={{ flexGrow: 1, textAlign: 'center', px: 2, fontWeight: 'bold', mb: 2 }}>
-                  Guía para la presentación de Resúmenes
+                  Guía para la presentación de Resúmenes Extendidos
                 </Typography>
                 <Timeline className="timeline">
                   <TimelineItem>
@@ -142,20 +142,20 @@ const Summary = () => {
                       <TimelineDot />
                       <TimelineConnector />
                     </TimelineSeparator>
-                    <TimelineContent>Descargar las <a href="https://drive.google.com/drive/folders/1uuXiogEblQPIHMD457n7WLT8wvbHmtmD?usp=sharing" style={{ color: "red", textDecoration: "none", fontWeight: "bold" }}>Normas e instrucciones</a> para la elaboración del resumen</TimelineContent>
+                    <TimelineContent>Descargar las <a href="https://drive.google.com/drive/folders/1uuXiogEblQPIHMD457n7WLT8wvbHmtmD?usp=sharing" style={{ color: "red", textDecoration: "none", fontWeight: "bold" }}>Normas e instrucciones</a> para la elaboración del resumen extendido</TimelineContent>
                   </TimelineItem>
                   <TimelineItem>
                     <TimelineSeparator>
                       <TimelineDot />
                       <TimelineConnector />
                     </TimelineSeparator>
-                    <TimelineContent>Terminado su resumen ingresar al siguiente <a href="https://forms.gle/qDhKPA9tdD7aT7C18" style={{ color: "red", textDecoration: "none", fontWeight: "bold" }}>Formulario</a> para subir sus datos</TimelineContent>
+                    <TimelineContent>Terminado su resumen ingresar al siguiente <a href="https://forms.gle/exfbEodFCh9iUm3h8" style={{ color: "red", textDecoration: "none", fontWeight: "bold" }}>Formulario</a> para subir sus datos</TimelineContent>
                   </TimelineItem>
                   <TimelineItem>
                     <TimelineSeparator>
                       <TimelineDot />
                     </TimelineSeparator>
-                    <TimelineContent>Esperar la aprobación de su resumen</TimelineContent>
+                    <TimelineContent>Esperar la aprobación de su resumen extendido</TimelineContent>
                   </TimelineItem>
                 </Timeline>
 
