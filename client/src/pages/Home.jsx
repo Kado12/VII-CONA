@@ -1,41 +1,103 @@
-import React, { useState, useEffect } from "react";
-import { AppBar, Toolbar, Typography, Link, Box, Avatar, List, ListItem, ListItemButton, ListItemText, Divider, Card, CardContent, CardMedia, CardActionArea, Modal, IconButton, Button } from '@mui/material';
+import React, { useState, useEffect } from 'react';
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Link,
+  Box,
+  Avatar,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+  Divider,
+  Card,
+  CardContent,
+  CardMedia,
+  CardActionArea,
+  Button,
+} from '@mui/material';
 import Grid from '@mui/material/Grid2';
-import { Close, PlayCircle } from '@mui/icons-material';
+import { PlayCircle } from '@mui/icons-material';
+import { ListAlt } from '@mui/icons-material';
 
-import Slider from "../components/Slider"
-import ListNav from "../components/ListNav";
-import './Home.css'
+import Slider from '../components/Slider';
+import ListNav from '../components/ListNav';
+import Modals from '../components/Modals'; // ← componente genérico
+import './Home.css';
+
+const participantes = [
+  'Alarcon Ataucusi, David Jorge',
+  'Aldana Vásquez, Eduardo Jesús',
+  'Arancibia, Ada',
+  'Arbaiza Ocrospoma, Hulinho Yordy',
+  'Atencio Oliva, Joel Victor',
+  'Atúncar Zevallos, Gustavo Adolfo',
+  'Ayala Bizarro, Ivan Arturo',
+  'Benito Rojas, Hugo Miguel',
+  'Cabrera Cabrera, Juan Walter',
+  'Cano Valencia, Alejandro',
+  'Cántaro Fabián, Gideael Quislón',
+  'Carpio Ancalle, Eduardo Jesús',
+  'Chambilla Chipana, María Lourdes',
+  'Chávarri Velarde, Eduardo Abraham',
+  'Chavez Ayala, Luis Angel',
+  'Cruz Rodriguez, Carolina Elizabeth',
+  'Escobedo López, Adriana Samantha',
+  'Esteban Yauyo, Richard Smith',
+  'Flores Riveros, Jose Antonio',
+  'Gastelu Silvera, Joseph Frankchesco',
+  'Gil Mora, Juan Eduardo',
+  'Guevara Bendezu, José',
+  'Hidalgo García, Roger',
+  'Huanay Pérez, Joseph Rubén',
+  'Huanuqueño Murillo, José Luis',
+  'Huayna Felipe, German',
+  'Injante Lima, Emilio Domingo',
+  'Jamanca Espinoza, Eriksson Joseph',
+  'Luna Visitación, Hana Paich',
+  'Mallqui Durand, Jhon Deyver Max',
+  'Mamani Larico, Albert Johan',
+  'Meseth Macchiavello, Enrique',
+  'Murga Paniagua, Sebastián Alonso',
+  'Navarro Guzmán, Marco Alberto',
+  'Paliza Magallanes, Yeremi Victor',
+  'Paucar Hilario, Carlos Efrain',
+  'Paucar Y Montenegro, Clifton',
+  'Pino Vargas, Edwin Martin',
+  'Ponce, Victor M.',
+  'Rau, Pedro',
+  'Rendón Schneir, Eric',
+  'Rivera Huaman, Johan Antonio',
+  'Rosas Barturén, Miluska Anthuannet',
+  'Saldaña Quisca, Marcelo',
+  'Sánchez Astello, Ma Magdalena',
+  'Sánchez Estello, Ma. Magdalena',
+  'Sánchez Gamarra, Kory Celeste',
+  'Tafur Gutierrez, Enrique Leoncio',
+  'Vargas Huanca, Wilber',
+  'Ventura Rosas, Harold Hans'
+];
 
 const Home = () => {
-  const [openVideoModal, setOpenVideoModal] = useState(false);
+  const [openReel, setOpenReel] = useState(false);
+  const [openList, setOpenList] = useState(false);
 
-  // Abrir modal automáticamente al cargar la página
+  // Modal REEL solo al entrar
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setOpenVideoModal(true);
-    }, 2000); // Se abre después de 2 segundos
-
-    return () => clearTimeout(timer);
+    const t = setTimeout(() => setOpenReel(true), 2000);
+    return () => clearTimeout(t);
   }, []);
-
-  const handleOpenVideoModal = () => {
-    setOpenVideoModal(true);
-  };
-
-  const handleCloseVideoModal = () => {
-    setOpenVideoModal(false);
-  };
 
   return (
     <div>
-      {/* Botón flotante para abrir el video */}
+      {/* Botón flotante → abre modal LISTA */}
       <Box sx={{ position: 'fixed', bottom: 20, right: 20, zIndex: 1000 }}>
         <Button
           variant="contained"
-          onClick={handleOpenVideoModal}
+          onClick={() => setOpenList(true)}
           sx={{
-            backgroundColor: '#FF6B6B',
+            backgroundColor: '#1e6463',
             color: 'white',
             borderRadius: '50%',
             width: 60,
@@ -43,86 +105,59 @@ const Home = () => {
             minWidth: 60,
             boxShadow: '0 4px 8px rgba(0,0,0,0.3)',
             '&:hover': {
-              backgroundColor: '#FF5252',
+              backgroundColor: 'rgba(35, 143, 149, 0.78)',
               transform: 'scale(1.1)',
-            }
+            },
           }}
         >
-          <PlayCircle sx={{ fontSize: 30 }} />
+          <ListAlt sx={{ fontSize: 30 }} />
         </Button>
       </Box>
 
-      {/* Modal con video vertical */}
-      <Modal
-        open={openVideoModal}
-        onClose={handleCloseVideoModal}
-        aria-labelledby="video-modal-title"
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
+      {/* Modal REEL (solo auto-open) */}
+      <Modals
+        open={openReel}
+        onClose={() => setOpenReel(false)}
+        // videoSrc="/CONA REEL 4.mp4"
+        // poster="https://via.placeholder.com/400x600"
+        title="COMUNICADO DE LA COMISION DE EVALUACION DE RESUMENES DE INVESTIGACION"
       >
-        <Box
-          sx={{
-            position: 'relative',
-            width: { xs: '95%', sm: '80%', md: '60%' },
-            maxWidth: 400,
-            bgcolor: 'background.paper',
-            borderRadius: 2,
-            boxShadow: 24,
-            overflow: 'hidden',
-            outline: 'none',
-          }}
-        >
-          {/* Botón de cierre */}
-          <IconButton
-            onClick={handleCloseVideoModal}
-            sx={{
-              position: 'absolute',
-              top: 8,
-              right: 8,
-              zIndex: 2,
-              backgroundColor: 'rgba(0,0,0,0.7)',
-              color: 'white',
-              '&:hover': {
-                backgroundColor: 'rgba(0,0,0,0.9)',
-              }
-            }}
-          >
-            <Close />
-          </IconButton>
-
-          {/* Video */}
-          <Box sx={{ width: '100%', position: 'relative' }}>
-            <video
-              style={{
-                width: '100%',
-                height: 'auto',
-                maxHeight: '70vh',
-                display: 'block',
-              }}
-              controls
-              autoPlay
-              muted
-              poster="https://via.placeholder.com/400x600"
-            >
-              <source src="/CONA REEL 4.mp4" type="video/mp4" />
-              Tu navegador no soporta el elemento de video.
-            </video>
-          </Box>
-
-          {/* Título opcional del video */}
-          <Box sx={{ p: 2, textAlign: 'center' }}>
-            <Typography variant="h6" component="h2" sx={{ color: '#007BFF' }}>
-              VII CONA Perú 2025
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Conoce más sobre nosotros
-            </Typography>
-          </Box>
+        <Box sx={{ p: 2, textAlign: 'justify' }}>
+          <Typography variant="body2" color="text.primary">
+            La Comisión de Evaluación de Resúmenes de las ponencias que serán expuestas en el VII Congreso Nacional del Agua, expresa sus disculpas por el retraso en la publicación de los resultados, ya que al tener una demanda importante de investigadores de las universidades públicas y privadas, esto recargo el tiempo de evaluación y por ello presentamos las Ponencias que han sido aprobadas y admitidas en el VII Congreso Nacional de Agua 2025, recomendando que remitan el resumen extendido y que también tener en cuenta su inscripción y pronta cancelación de la misma como Ponentes.
+          </Typography>
+          <Typography variant="body2" color="text.primary">
+            Así mismo, indicar que aquellos Ponentes que requieran validar esta participación y están en esta lista de seleccionados/aprobados, pueden solicitar un documento oficial expedido por el Decanato de la Facultad de Ingeniería Civil de la Universidad Nacional San Luis Gonzaga para los fines que consideren pertinentes.
+            Agradecemos la participación en esta fase y felicitamos a aquellos que quedaron seleccionado para la siguiente fase de resumen extendido a cumplirse el 15 de octubre del 2025 y su exposición en el VII CONA.
+          </Typography>
         </Box>
-      </Modal>
+        <Box sx={{ p: 2, textAlign: 'end' }}>
+          <Typography variant="body2" color="text.primary" fontWeight="bold">
+            Atentamente
+          </Typography>
+          <Typography variant="body2" color="primary" fontWeight="bold">
+            Comisión Evaluación de Resúmenes - VII CONA 2025
+          </Typography>
+        </Box>
+      </Modals>
+
+      {/* Modal LISTA (botón flotante) */}
+      <Modals
+        open={openList}
+        onClose={() => setOpenList(false)}
+        title="RESUMENES APROBADOS"
+        subtitle="Autores seleccionados para la siguiente fase de resumen extendido."
+      >
+        <List sx={{ padding: 0, overflow: 'hidden' }}>
+          {participantes.map((name) => (
+            <ListItem key={name} disablePadding>
+              <ListItemButton>
+                <ListItemText primary={name} />
+              </ListItemButton>
+            </ListItem>
+          ))}
+        </List>
+      </Modals>
 
       <Slider />
       <Box component="section" sx={{ p: 2, bgcolor: '#56bfb6ff', textAlign: 'center', color: 'white', fontWeight: 'bold', border: 1, borderColor: '#a0bfff', borderStyle: 'solid' }}>
