@@ -69,11 +69,13 @@ const Home = () => {
         title="COMUNICADO DE LA COMISION DE EVALUACION DE RESUMENES DE INVESTIGACION"
       >
         <Box sx={{ p: 2, textAlign: 'justify' }}>
-          <Typography variant="body2" color="text.primary">
+          <Typography variant="body2" color="text.primary" marginBottom={1}>
             La Comisión de Evaluación de Resúmenes de las ponencias que serán expuestas en el VII Congreso Nacional del Agua, expresa sus disculpas por el retraso en la publicación de los resultados, ya que al tener una demanda importante de investigadores de las universidades públicas y privadas, esto recargo el tiempo de evaluación y por ello presentamos las Ponencias que han sido aprobadas y admitidas en el VII Congreso Nacional de Agua 2025, recomendando que remitan el resumen extendido y que también tener en cuenta su inscripción y pronta cancelación de la misma como Ponentes.
           </Typography>
-          <Typography variant="body2" color="text.primary">
+          <Typography variant="body2" color="text.primary" marginBottom={1}>
             Así mismo, indicar que aquellos Ponentes que requieran validar esta participación y están en esta lista de seleccionados/aprobados, pueden solicitar un documento oficial expedido por el Decanato de la Facultad de Ingeniería Civil de la Universidad Nacional San Luis Gonzaga para los fines que consideren pertinentes.
+          </Typography>
+          <Typography variant="body2" color="text.primary">
             Agradecemos la participación en esta fase y felicitamos a aquellos que quedaron seleccionado para la siguiente fase de resumen extendido a cumplirse el 15 de octubre del 2025 y su exposición en el VII CONA.
           </Typography>
         </Box>

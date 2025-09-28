@@ -59,7 +59,7 @@ const Modals = ({
 
             {/* Título / subtítulo */}
             {(title || subtitle) && (
-               <Box sx={{ p: 2, textAlign: 'center' }}>
+               <Box sx={{ p: 1, textAlign: 'center' }}>
                   {title && (
                      <Typography variant="h6" sx={{ color: '#007BFF' }}>
                         {title}
