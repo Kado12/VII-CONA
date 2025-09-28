@@ -26,62 +26,8 @@ import ListNav from '../components/ListNav';
 import Modals from '../components/Modals'; // ← componente genérico
 import './Home.css';
 
-const participantes = [
-  'Alarcon Ataucusi, David Jorge',
-  'Aldana Vásquez, Eduardo Jesús',
-  'Arancibia, Ada',
-  'Arbaiza Ocrospoma, Hulinho Yordy',
-  'Atencio Oliva, Joel Victor',
-  'Atúncar Zevallos, Gustavo Adolfo',
-  'Ayala Bizarro, Ivan Arturo',
-  'Benito Rojas, Hugo Miguel',
-  'Cabrera Cabrera, Juan Walter',
-  'Cano Valencia, Alejandro',
-  'Cántaro Fabián, Gideael Quislón',
-  'Carpio Ancalle, Eduardo Jesús',
-  'Chambilla Chipana, María Lourdes',
-  'Chávarri Velarde, Eduardo Abraham',
-  'Chavez Ayala, Luis Angel',
-  'Cruz Rodriguez, Carolina Elizabeth',
-  'Escobedo López, Adriana Samantha',
-  'Esteban Yauyo, Richard Smith',
-  'Flores Riveros, Jose Antonio',
-  'Gastelu Silvera, Joseph Frankchesco',
-  'Gil Mora, Juan Eduardo',
-  'Guevara Bendezu, José',
-  'Hidalgo García, Roger',
-  'Huanay Pérez, Joseph Rubén',
-  'Huanuqueño Murillo, José Luis',
-  'Huayna Felipe, German',
-  'Injante Lima, Emilio Domingo',
-  'Jamanca Espinoza, Eriksson Joseph',
-  'Luna Visitación, Hana Paich',
-  'Mallqui Durand, Jhon Deyver Max',
-  'Mamani Larico, Albert Johan',
-  'Meseth Macchiavello, Enrique',
-  'Murga Paniagua, Sebastián Alonso',
-  'Navarro Guzmán, Marco Alberto',
-  'Paliza Magallanes, Yeremi Victor',
-  'Paucar Hilario, Carlos Efrain',
-  'Paucar Y Montenegro, Clifton',
-  'Pino Vargas, Edwin Martin',
-  'Ponce, Victor M.',
-  'Rau, Pedro',
-  'Rendón Schneir, Eric',
-  'Rivera Huaman, Johan Antonio',
-  'Rosas Barturén, Miluska Anthuannet',
-  'Saldaña Quisca, Marcelo',
-  'Sánchez Astello, Ma Magdalena',
-  'Sánchez Estello, Ma. Magdalena',
-  'Sánchez Gamarra, Kory Celeste',
-  'Tafur Gutierrez, Enrique Leoncio',
-  'Vargas Huanca, Wilber',
-  'Ventura Rosas, Harold Hans'
-];
-
 const Home = () => {
   const [openReel, setOpenReel] = useState(false);
-  const [openList, setOpenList] = useState(false);
 
   // Modal REEL solo al entrar
   useEffect(() => {
@@ -95,7 +41,7 @@ const Home = () => {
       <Box sx={{ position: 'fixed', bottom: 20, right: 20, zIndex: 1000 }}>
         <Button
           variant="contained"
-          onClick={() => setOpenList(true)}
+          onClick={() => setOpenReel(true)}
           sx={{
             backgroundColor: '#1e6463',
             color: 'white',
@@ -139,24 +85,6 @@ const Home = () => {
             Comisión Evaluación de Resúmenes - VII CONA 2025
           </Typography>
         </Box>
-      </Modals>
-
-      {/* Modal LISTA (botón flotante) */}
-      <Modals
-        open={openList}
-        onClose={() => setOpenList(false)}
-        title="RESUMENES APROBADOS"
-        subtitle="Autores seleccionados para la siguiente fase de resumen extendido."
-      >
-        <List sx={{ padding: 0, overflow: 'hidden' }}>
-          {participantes.map((name) => (
-            <ListItem key={name} disablePadding>
-              <ListItemButton>
-                <ListItemText primary={name} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
       </Modals>
 
       <Slider />

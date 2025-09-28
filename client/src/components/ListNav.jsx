@@ -33,6 +33,9 @@ const ListNav = () => {
         <ListItemButton component="a" href="/summary">
           <ListItemText primary="Resumenes Extendidos" />
         </ListItemButton>
+        <ListItemButton component="a" href="/approved-summary">
+          <ListItemText primary="Resumenes Aprobados" />
+        </ListItemButton>
       </Box>
       <Box sx={{ bgcolor: '#f0f0f0', borderRadius: 1, mt: 3 }}>
         <ListItemButton component="a" disabled sx={{ bgcolor: "blue", color: "white" }} >
