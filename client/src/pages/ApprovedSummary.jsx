@@ -98,6 +98,30 @@ const ApprovedSummary = () => {
               <ListNav />
             </Grid>
             <Grid size={{ xs: 12, sm: 8, md: 9 }}>
+              <Box component="section" sx={{ p: 2, bgcolor: 'rgba(160, 135, 113, 0.49)', textAlign: 'center', fontWeight: 'bold', border: 1, borderColor: 'rgb(177, 156, 138)', borderStyle: 'solid', margin: 1 }}>
+                <Typography variant="p" color="primary" component="div" sx={{ flexGrow: 1, textShadow: '0px 0px 5px #3af' }}>
+                  COMUNICADO DE LA COMISION DE EVALUACION DE RESUMENES DE INVESTIGACION
+                </Typography>
+                <Box sx={{ p: 2, textAlign: 'justify' }}>
+                  <Typography variant="body2" color="text.primary" marginBottom={1}>
+                    La Comisión de Evaluación de Resúmenes de las ponencias que serán expuestas en el VII Congreso Nacional del Agua, expresa sus disculpas por el retraso en la publicación de los resultados, ya que al tener una demanda importante de investigadores de las universidades públicas y privadas, esto recargo el tiempo de evaluación y por ello presentamos las Ponencias que han sido aprobadas y admitidas en el VII Congreso Nacional de Agua 2025, recomendando que remitan el resumen extendido y que también tener en cuenta su inscripción y pronta cancelación de la misma como Ponentes.
+                  </Typography>
+                  <Typography variant="body2" color="text.primary" marginBottom={1}>
+                    Así mismo, indicar que aquellos Ponentes que requieran validar esta participación y están en esta lista de seleccionados/aprobados, pueden solicitar un documento oficial expedido por el Decanato de la Facultad de Ingeniería Civil de la Universidad Nacional San Luis Gonzaga para los fines que consideren pertinentes.
+                  </Typography>
+                  <Typography variant="body2" color="text.primary">
+                    Agradecemos la participación en esta fase y felicitamos a aquellos que quedaron seleccionado para la siguiente fase de resumen extendido a cumplirse el 15 de octubre del 2025 y su exposición en el VII CONA.
+                  </Typography>
+                </Box>
+                <Box sx={{ p: 2, textAlign: 'end' }}>
+                  <Typography variant="body2" color="text.primary" fontWeight="bold">
+                    Atentamente
+                  </Typography>
+                  <Typography variant="body2" color="primary" fontWeight="bold">
+                    Comisión Evaluación de Resúmenes - VII CONA 2025
+                  </Typography>
+                </Box>
+              </Box>
               <Box component="section" sx={{ p: 2 }}>
                 <Typography variant="h5" component="div" sx={{ flexGrow: 1, textAlign: 'center', px: 2, fontWeight: 'bold', mb: 2 }}>
                   Resumenes Seleccionados / Aprobados
