@@ -26,7 +26,9 @@ const rows = [
   createData('PROFESIONALES', 'S/300.00', 'S/350.00', 'S/400.00'),
   createData('PROFESIONALES PONENTES', 'S/250.00', 'S/300.00', 'S/350.00'),
   createData('ESTUDIANTES', 'S/100.00', 'S/150.00', 'S/200.00'),
-  createData('ESTUDIANTES PONENTES', 'S/75.00', 'S/100.00', 'S/150.00')
+  createData('ESTUDIANTES PONENTES', 'S/75.00', 'S/100.00', 'S/150.00'),
+  createData('PUBLICO INTERESADO', '-', 'S/500.00', 'S/500.00'),
+  createData('GRUPO CORPORATIVO MINIMO 3 PROFESIONALES', '-', 'S/300.00 CADA UNO', 'S/300.00 CADA UNO')
 ];
 
 const Inscriptions = () => {

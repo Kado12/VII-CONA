@@ -23,7 +23,9 @@ const createData = (category, cost, concept) => {
 }
 
 const rows = [
-  createData('EMPRESAS', 'S/2500.00', `Stand modular de 4m de largo por 3m de ancho`),
+  createData('EMPRESAS A', 'S/5000.00', `Stand modular de 4m de largo por 3m de ancho`),
+  createData('EMPRESAS B', 'S/2500.00', `Stand modular de 3m de largo por 2m de ancho`),
+  createData('INSTITUCIONES INVITADAS', 'S/1000.00', `Stand modular de 3m de largo por 2m de ancho`),
 
 
 ];
