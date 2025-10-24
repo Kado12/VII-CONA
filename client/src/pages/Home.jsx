@@ -70,13 +70,7 @@ const Home = () => {
       >
         <Box sx={{ p: 2, textAlign: 'justify' }}>
           <Typography variant="body2" color="text.primary" marginBottom={1}>
-            La Comisión de Evaluación de Resúmenes de las ponencias que serán expuestas en el VII Congreso Nacional del Agua, expresa sus disculpas por el retraso en la publicación de los resultados, ya que al tener una demanda importante de investigadores de las universidades públicas y privadas, esto recargo el tiempo de evaluación y por ello presentamos las Ponencias que han sido aprobadas y admitidas en el VII Congreso Nacional de Agua 2025, recomendando que remitan el resumen extendido y que también tener en cuenta su inscripción y pronta cancelación de la misma como Ponentes.
-          </Typography>
-          <Typography variant="body2" color="text.primary" marginBottom={1}>
-            Así mismo, indicar que aquellos Ponentes que requieran validar esta participación y están en esta lista de seleccionados/aprobados, pueden solicitar un documento oficial expedido por el Decanato de la Facultad de Ingeniería Civil de la Universidad Nacional San Luis Gonzaga para los fines que consideren pertinentes.
-          </Typography>
-          <Typography variant="body2" color="text.primary">
-            Agradecemos la participación en esta fase y felicitamos a aquellos que quedaron seleccionado para la siguiente fase de resumen extendido a cumplirse el 15 de octubre del 2025 y su exposición en el VII CONA.
+            Estimados(as) colegas ponentes, debido al retraso en la publicación de resumes aprobados y a las solicitudes recibidas para emitir un documento que les permita trámitar el pago como ponente, la Comisión Organizadora del VII CONA ICA 2025 posterga el día para entrega de Resúmenes extendidos y envío de voucher por inscripción hasta el día miércoles 29 de octubre 2025.
           </Typography>
         </Box>
         <Box sx={{ p: 2, textAlign: 'end' }}>
@@ -84,7 +78,7 @@ const Home = () => {
             Atentamente
           </Typography>
           <Typography variant="body2" color="primary" fontWeight="bold">
-            Comisión Evaluación de Resúmenes - VII CONA 2025
+            MSc. Freddy Franco Alvarado - DECANO FIC
           </Typography>
         </Box>
       </Modals>

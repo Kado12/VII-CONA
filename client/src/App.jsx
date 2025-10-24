@@ -12,6 +12,8 @@ import Seat from './pages/Seat'
 import Events from './pages/Events'
 import Summary from './pages/Summary'
 import ApprovedSummary from './pages/ApprovedSummary'
+import PreCongress from './pages/PreCongress'
+
 
 // * Components
 import Header from './components/Header'
@@ -35,6 +37,7 @@ const App = () => {
             <Route path="/news-events" element={<Events />} />
             <Route path="/summary" element={<Summary />} />
             <Route path="/approved-summary" element={<ApprovedSummary />} />
+            <Route path="/pre-congress" element={<PreCongress />} />
           </Routes>
         </Box>
         <Footer />
