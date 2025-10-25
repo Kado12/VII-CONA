@@ -101,7 +101,9 @@ const Inscriptions = () => {
                     <TimelineSeparator>
                       <TimelineDot />
                     </TimelineSeparator>
-                    <TimelineContent>Completar el siguiente formulario: <a href="https://forms.gle/gNNr9DUv3EeoNUYf9" style={{ color: "red", textDecoration: "none", fontWeight: "bold" }}>Inscripción VII CONA</a></TimelineContent>
+                    <TimelineContent>
+                      Completar el siguiente formulario: <a href="https://forms.gle/gNNr9DUv3EeoNUYf9" style={{ color: "red", textDecoration: "none", fontWeight: "bold" }}>Inscripción VII CONA</a>
+                    </TimelineContent>
                   </TimelineItem>
                 </Timeline>
               </Box>

@@ -18,67 +18,66 @@ import TimelineDot from '@mui/lab/TimelineDot';
 
 import ListNav from "../components/ListNav";
 
-const createData = (name, last_name, summary) => {
-  return { name, last_name, summary }
+const createData = (autor, coautor, summary) => {
+  return { autor, coautor, summary }
 }
 
 const rows = [
-  createData('David Jorge', 'Alarcon Ataucusi', 'Implementación Del Modelo Hidrológico Distribuido Tetis En La Cuenca Del Río Cachi, Ayacucho'),
-  createData('Eduardo Jesús', 'Aldana Vásquez', 'Modelamiento Bim Del Diseño Y La Planificación De La Construcción De La Presa Cfrd, Ninahuisa'),
-  createData('Ada', 'Arancibia', 'Avances En La Investigación De Los Techos Verdes Como Suds'),
-  createData('Hulinho Yordy', 'Arbaiza Ocrospoma', 'Análisis Multicriterio Mediante Sistema De Información Geográfica Para La Selección Del Sitio Y Tipo De Presa Óptimo En La Cuenca Del Río Lurín'),
-  createData('Joel Victor', 'Atencio Oliva', 'Simulación De Flujos De Lodos En Un Canal De Laboratorio – Quebrada Malanche, Punta Hermosa'),
-  createData('Gustavo Adolfo', 'Atúncar Zevallos', 'Aplicación De Inteligencia Artificial En La Simulación De Escorrentía: Un Análisis Comparativo Entre Red Neuronal LSTM Y El Modelo Hidrológico SWAT'),
-  createData('Ivan Arturo', 'Ayala Bizarro', 'Análisis Comparativo Del Runout En Flujos No Newtonianos Sobre Canales Escalonados Mediante Experimentación Física Y Modelación Cfd'),
-  createData('Hugo Miguel', 'Benito Rojas', 'Uso Del Número De Vedernikov En El Diseño De Canales De Alta Pendiente'),
-  createData('Juan Walter', 'Cabrera Cabrera', 'Método De Área Pendiente Modificado Para La Estimación De Caudales En Ríos De Lecho Pedregoso De La Costa Peruana'),
-  createData('Alejandro', 'Cano Valencia', 'Impacto De Un Depósito De Detención De Lluvias En La Capacidad Hidráulica De Una Red De Drenaje Pluvial En Arequipa'),
-  createData('Gideael Quislón', 'Cántaro Fabián', 'Diseño Hidráulico Optimizado De Aliviaderos Escalonados Convergente En Presas RCC, Mediante Modelación 3D'),
-  createData('Eduardo Jesús', 'Carpio Ancalle', 'Comparación De Modelos Hidrológicos Conceptuales Para La Infraestructura Natural Basada En Bofedales En La Cuenca Alta Del Río Vilcanota'),
-  createData('María Lourdes', 'Chambilla Chipana', 'Ecosistemas Rurales En Transición: Implicancias Hídricas Y Paisajísticas En Miculla – Tacna'),
-  createData('Eduardo Abraham', 'Chávarri Velarde', 'Impactos Del Cambio Climatico Y La Variabilidad En La Precipitacion Y Los Caudales Maximos En La Quebrada Del Diablo, Tacna, Peru'),
-  createData('Luis Angel', 'Chavez Ayala', 'Cunetas Verdes Como Alternativa Sostenible: Análisis Comparativo Mediante La Modelación Física'),
-  createData('Carolina Elizabeth', 'Cruz Rodriguez', 'El Estrés Hídrico Del Cultivo Del Olivo En La Cabecera Desierto Atacama: Un Enfoque Basado En Teledetección E Inteligencia Artificial'),
-  createData('Adriana Samantha ', 'Escobedo López ', 'Influencia Del Fenómeno El Niño Y La Antropización En Caudales De Las Cuencas Piura Y Zaña. Un Enfoque De Pronóstico'),
-  createData('Richard Smith ', 'Esteban Yauyo ', 'Determinación De Cotas De Inundación Extrémales En La Punta – Callao Mediante Modelación Numérica En Python'),
-  createData('Jose Antonio', 'Flores Riveros', 'Evaluación De Variables Predictoras E Incertidumbre En La Estimación De La Evapotranspiración Mediante Redes Neuronales'),
-  createData('Joseph Frankchesco', 'Gastelu Silvera', 'Teledetección De Clorofila-A En Ecosistemas Acuáticos Altoandinos: Análisis De Series Temporales 2017-2025'),
-  createData('Juan Eduardo', 'Gil Mora', 'Determinación Del Índice De Calidad Del Agua De Dos Ríos Urbanos En La Ciudad Del Cusco: Saphy Y Cachimayu'),
-  createData('Juan Eduardo', 'Gil Mora', 'Determinación Del Índice De Calidad Del Agua De Dos Ríos Urbanos En La Ciudad Del Cusco: Saphy Y Cachimayu'),
-  createData('José', 'Guevara Bendezu', 'Gestión Integrada Del Recurso Hídrico Del Rio Ica Almacenando Excedentes Anuales, Evaluación Prospectiva Al 2030'),
-  createData('Roger', 'Hidalgo García', 'Cunetas Verdes Como Alternativa Sostenible: Análisis Comparativo Mediante La Modelación Física'),
-  createData('Joseph Rubén Francisco', 'Huanay Pérez', 'Calibración De Hidrogramas Unitarios Sintéticos Para Estimar Caudales De Avenida En Cuencas De La Zona Altoandina Del Departamento De Huánuco'),
-  createData('José Luis', 'Huanuqueño Murillo', 'Monitoreo Multitemporal Del Estrés Hídrico En Arrozales De La Región Lambayeque Mediante Imágenes Satelitales Calibradas Mediante Drones Con Cámaras Térmicas'),
-  createData('German ', 'Huayna Felipe', 'Dinámica Y Proyecciones De Ecosistemas De Alta Montaña En Entornos Áridos Y Su Incidencia En El Acuífero Caplina: Análisis Con CA-Markov En La Cordillera Del Barroso, Tacna, Perú'),
-  createData('Emilio Domingo', 'Injante Lima', 'Preservación De Reserva De Huarangos (Prosopis Limensis) En El Valle De Ica: Una Estrategia De Reforestación Con Reúso De Aguas Residuales Domésticas'),
-  createData('Eriksson Joseph', 'Jamanca Espinoza', 'Comparativa Técnico-Económica De Soluciones Rígidas Y Flexibles En Quebradas Activas: Lecciones Para La Gestión Sostenible Del Agua Y Sedimentos'),
-  createData('Hana Paich', 'Luna Visitación', 'Modelamiento Hidrológico Para Identificar Áreas De Riesgo En La Subcuenca Quillcay, Sector Nueva Florida, Distrito Independencia 2024'),
-  createData('Jhon Deyver Max ', 'Mallqui Durand', 'Modelación Hidrodinámica Para El Transporte De Mercurio Asociado A Pulsos De Sedimentos En El Río Madre De Dios'),
-  createData('Albert Johan', 'Mamani Larico', 'Integración De Procesos Ecohidrológicos De Ecosistemas Semiáridos De Montaña Para La Gestión De Intervenciones De Interés Hídrico'),
-  createData('Enrique', 'Meseth Macchiavello', 'Gestión De Recursos Hídricos Y Agricultura En Vilcabamba, Cusco, Desde Los Incas Hasta La Actualidad'),
-  createData('Sebastián Alonso', 'Murga Paniagua', 'Evaluación Comparativa De Modelos Analíticos, Físicos Y Numéricos Para El Diseño De Disipadores De Energía Tipo USBR II'),
-  createData('Marco Alberto', 'Navarro Guzmán', 'Variabilidad Espacial De Ecosistemas Reguladores De Agua Al Sur Del Perú: Clima O Actividad Humana'),
-  createData('Yeremi Victor', 'Paliza Magallanes', 'Análisis De Niveles De Peligro Por Inundaciones Pluviales En La Quebrada Sahuanay, Distrito De Abancay, Departamento De Apurímac – 2025'),
-  createData('Carlos Efrain', 'Paucar Hilario', 'Aspectos Ingenieriles En La Agresividad Térmica En El Centro Poblado Santa Bárbara – Huancavelica'),
-  createData('Carlos Efrain', 'Paucar Hilario', 'Microclima Vertical En La Escuela De Ingeniería Civil De La Universidad Nacional De Huancavelica: Estabilidad Térmica Y Riesgos Urbanos'),
-  createData('Clifton', 'Paucar Y Montenegro', 'Integración De Rusle/Sdr Con Sig Para Evaluar Erosión Y Rendimiento De Sedimentos En Laderas Andinas En Proceso De Urbanización'),
-  createData('Edwin Martin', 'Pino Vargas', 'Determinación De Zonas Vulnerables A Inundaciones Repentinas Usando Técnicas De Inteligencia Artificial En Regiones Áridas, Norte Del Desierto De Atacama'),
-  createData('Edwin Martin', 'Pino Vargas', 'Dinámica De La Cobertura Terrestre Y Predicciones Proyectadas Cabecera Desierto De Atacama: Un Enfoque Basado En Teledetección E Inteligencia Artificial'),
-  createData('Victor M.', 'Ponce', 'La Onda Cinemática Desmitificada'),
-  createData('Victor Miguel', 'Ponce', 'Ondas Cinemático-Dinámicas Mixtas Desbancadas'),
-  createData('Pedro', 'Rau', 'Influencia Del Fenómeno El Niño Y La Antropización En Caudales De Las Cuencas Piura Y Zaña. Un Enfoque De Pronóstico'),
-  createData('Pedro', 'Rau', 'Una Aproximación A La Reconstrucción Hidrológica Y Revalorización Histórica Del Rio Zaña En Los Últimos 500 Años'),
-  createData('Eric', 'Rendón Schneir', 'Análisis Del Enfoque Económico En La Gestión Hídrica En El Perú: Antecedentes Y Perspectivas'),
-  createData('Johan Antonio', 'Rivera Huaman', 'Modelamiento Bim En La Planificación De La Construcción De La Presa De Concreto Gravedad Quisco'),
-  createData('Johan Antonio', 'Rivera Huaman', 'Modelamiento Bim De La Construcción De La Presa De Concreto Gravedad Quisco'),
-  createData('Miluska Anthuannet', 'Rosas Barturén', 'Transformación Del Territorio Fluvial Por Asentamientos Informales: Riesgos Emergentes Para La Infraestructura Urbana'),
-  createData('Marcelo', 'Saldaña Quisca', 'Evaluación De La Seguridad Física Y Funcional De La Presa Tinajones Mediante Análisis 3d De Filtración Y De Esfuerzo-Deformación'),
-  createData('Ma Magdalena ', 'Sánchez Astello', 'Determinación Del Tiempo De Ejecución De Un Proyecto A Través Del Diagrama De Redes Y De La Ruta Crítica: Estudio De Caso'),
-  createData('Ma. Magdalena', 'Sánchez Estello', 'Administración De Obras De Infraestructura Hidroagrícola Mediante La Aplicación De Cpm Y Diagramas De Gantt: Un Estudio De Caso'),
-  createData('Kory Celeste ', 'Sánchez Gamarra', 'Modelamiento Numérico Para El Diseño De Coberturas De La Relavera Mesapata Considerando Los Efectos Del Cambio Climático'),
-  createData('Enrique Leoncio', 'Tafur Gutierrez', 'Comparación Entre Un Modelo Numérico Y Físico En El Estudio Del Oleaje En La Costa Verde – Región Callao'),
-  createData('Wilber', 'Vargas Huanca', 'Valoración Económica De Sistemas Ancestrales De Recarga Artificial De Acuíferos En Entornos De Alta Montaña De Sierra Nevada, España'),
-  createData('Harold Hans', 'Ventura Rosas', 'Evaluación De La Capacidad Hidráulica Del Aliviadero De La Presa Gallito Ciego Bajo Escenario De Cambio Climático Utilizando La Ecuación De Fokker-Planck-Kolmogorov Y Modelación 3d')
+  createData('Alarcon Ataucusi David Jorge', 'Llactahuaman Huaman Cesar', 'Implementación del Modelo hidrológico distribuido Tetis en la Cuenca del Río Cachi, Ayacucho'),
+  createData('Alcantara Sandra', 'Escobedo López  Samantha, Rau Pedro, Yauca Harold', 'Influencia del Fenómeno El Niño y la Antropización en caudales de las Cuencas Piura y Zaña. Un Enfoque de Pronóstico'),
+  createData('Aldana Vásquez Eduardo Jesus', 'Saldaña Quisca Marcelo, Quisca Astocahuana Samuel Ismael.', 'Modelamiento BIM del Diseño y La Planificación de la construcción de la Presa CFRD, Ninahuisa'),
+  createData('Arancibia Ada', 'Arone V. Jamil, Huatuco Mitsue', 'Avances en la investigación de los Techos Verdes como SUDS'),
+  createData('Arbaiza Ocrospoma Hulinho Yordy', 'Quisca Astocahuana Samuel Ismael', 'Análisis multicriterio mediante sistema de información geográfica para la selección del sitio y tipo de presa optimo en la cuenca del  rio Lurín'),
+  createData('Atúncar Zevallos Gustavo Adolfo', '-', 'Aplicación de inteligencia artificial en la simulación de escorrentía: Un análisis comparativo entre red neuronal LSTM y el Modelo Hidrológico SWAT'),
+  createData('Ayala Bizarro Ivan Arturo', 'Gutierrez Ronald R.', 'Análisis comparativo del Runout en Flujos No Newtonianos sobre Canales escalonados mediante experimentación física y modelación CFD'),
+  createData('Cabrera Cabrera Juan Walter', '-', 'Método de area pendiente modificado para la estimación de caudales en ríos de Lecho Pedregoso de la Costa Peruana'),
+  createData('Cayllahua Herrera Edgar', 'Cano Valencia Alejandro', 'Impacto de un depósito de detención de lluvias en la capacidad hidráulica de una red de drenaje pluvial en Arequipa'),
+  createData('Cántaro Fabián Gideael Quislon', 'Quisca Samuel', 'Diseño hidráulico optimizado de Aliviaderos escalonados convergente en Presas RCC, Mediante Modelación 3D'),
+  createData('Carpio Ancalle Eduardo Jesus', 'Rau Pedro, Jara Mitchel', 'Comparación de Modelos Hidrológicos Conceptuales para la infraestructura natural basada en bofedales en la cuenca alta del río Vilcanota'),
+  createData('Castillo Navarro, Leonardo', 'Diego Cornejo, Diego Montenegro, Mark Santiago, Marco Yauri, Joel Atencio Oliva.', 'Simulación de flujos de lodos en un canal de laboratorio – Quebrada Malanche, Punta Hermosa '),
+  createData('Chambilla Chipana Maria Lourdes', '-', 'Ecosistemas rurales en transición: Implicancias hídricas y paisajísticas en Miculla – Tacna'),
+  createData('Chávarri Velarde Eduardo Abraham', 'Pino Vargas Edwin, Ingol-Blanco Eusebio, Mejía Fabricio, Cruz Ana, Vera Alissa', 'Impactos del cambio climatico y la variabilidad en la precipitacion y los caudales maximos en la Quebrada del Diablo, Tacna, Peru'),
+  createData('Chavez Ayala Luis Angel', 'Roger Hidalgo', 'Cunetas Verdes Como Alternativa Sostenible: Análisis Comparativo Mediante La Modelación Física'),
+  createData('Cruz Rodriguez Carolina Elizabeth', 'Pino Vargas Edwin, Huayna Germán,  Avendaño Jihuallanga César ', 'El estrés hídrico del cultivo del olivo en la cabecera del desierto Atacama: Un enfoque basado en Teledetección e Inteligencia Artificial'),
+  createData('De la Cruz Araujo Ronald', '-', 'Teoria y experimento en solitones hidrodinamicos'),
+  createData('Esteban Yauyo Richard Smith', 'Tafur Gutierrez Leoncio, Rozas Olivera Guido, Sarango Julca Duglas', 'Determinación de cotas de Inundación extrémales en La Punta – Callao mediante Modelación numérica en Python'),
+  createData('Flores Riveros Jose A.', 'Flores Galindo Fredy, Noa Yarasca Efrain ', 'Evaluación de variables predictoras e incertidumbre en la estimación de la evapotranspiración mediante redes neuronales'),
+  createData('Gastelu Silvera Joseph Frankchesco', 'Condori Hinostroza Joel ', 'Teledetección de Clorofila-A en ecosistemas acuáticos altoandinos: Análisis de Series Temporales 2017-2025'),
+  createData('Gil Mora Juan Eduardo', 'Álvaro Horacio Flores Boza', 'Determinación del Índice de Calidad del Agua de dos ríos urbanos en la ciudad Ddl Cusco: Saphy Y Cachimayu'),
+  createData('Guevara Bendezu Jose', '-', 'Gestión Integrada del recurso hídrico del Rio Ica almacenando excedentes anuales. Evaluación Prospectiva al 2030'),
+  createData('Huanay Pérez Joseph Ruben Francisco', 'Kuroiwa Zeballos Julio M. ', 'Calibración de Hidrogramas Unitarios Sintéticos para estimar caudales de avenida en cuencas de la zona altoandina del departamento de Huánuco'),
+  createData('Hidalgo Roger', 'Alvarez Dayanna,Briceño Fernando', 'Percepcion social y evaluacion climatica de la niebla para proyectos de captacion de agua en el A.H. CIUDAD DE GOSEN'),
+  createData('Huanuqueño Murillo Jose Luis', 'Quispe Tito David, Ramos Fernández Lia', 'Monitoreo multitemporal del estrés hídrico en arrozales de la región Lambayeque mediante imágenes satelitales calibradas mediante Drones con cámaras térmicas'),
+  createData('Huisa Maikol J.', 'Cabello Francis G, Jara Mitchel J.', 'Dinamica torrencial y Obras en la Quebrada Agoragra: Desafios para la Gestion de Riesgos'),
+  createData('Huayna Felipe German', 'Cabrera Olivera Fredy, Pino Vargas Edwin', 'Dinámica y proyecciones de Ecosistemas de Alta Montaña en entornos aridos y su incidencia en el acuífero Caplina: Análisis con CA-Markov en la Cordillera del Barroso, Tacna, Perú'),
+  createData('Injante Lima Emilio Domingo', '', 'Preservación de Reserva de Huarangos (Prosopis Limensis) en el Valle de Ica: Una estrategia de reforestación con Reúso de Aguas Residuales Domésticas'),
+  createData('Jamanca Espinoza Eriksson Joseph', 'Romero Rolando.', 'Comparativa técnico-económica de soluciones rígidas y flexibles en quebradas Activas: Lecciones para la gestión sostenible del agua y sedimentos'),
+  createData('Luna Visitación Hana Paich', 'Pachac Huerta Yenica', 'Modelamiento hidrológico para identificar areas de riesgo en la Subcuenca Quillcay, Sector Nueva Florida, Distrito Independencia 2024'),
+  createData('Mallqui Durand Jhon Deyver Max', 'Guerrero Leo, Kory Konsoer Kory, Daniel Horna Daniel, Rau Pedro', 'Modelación Hidrodinámica para el transporte de mercurio asociado a pulsos de sedimentos en el río Madre De Dios'),
+  createData('Mamani Larico Albert Johan', 'Huisa Maquera Syntia, Oscco Ciprian Laura, Boza Espinoza Ericka, Bonnesoeur Vivien', 'Integración de procesos ecohidrológicos de ecosistemas semiáridos de montaña para la gestión de intervenciones de Interés Hídrico'),
+  createData('Meseth Macchiavello Enrique', '-', 'Gestión de recursos hídricos y agricultura en Vilcabamba, Cusco, desde los Incas hasta la actualidad'),
+  createData('Navarro Guzmán Marco Alberto', 'Pino Vargas Edwin ', 'Variabilidad Espacial de ecosistemas reguladores de agua al sur del Perú: Clima o actividad humana'),
+  createData('Paliza Magallanes Yeremi Victor', 'Pinto Flores Percy Matiu', 'Análisis de niveles de peligro por inundaciones pluviales en la Quebrada Sahuanay, distrito de Abancay, departamento de Apurímac – 2025'),
+  createData('Parvina Chacaltana William Eduardo', 'Benito Rojas Hugo Miguel', 'Uso del Número de Vedernikov en el Diseño de Canales de Alta Pendiente'),
+  createData('Paucar Hilario Carlos Efrain', '-', 'Aspectos ingenieriles en la agresividad térmica en el Centro Poblado Santa Bárbara – Huancavelica'),
+  createData('Paucar Hilario Carlos Efrain', '-', 'Microclima vertical en la Escuela de Ingeniería Civil de la Universidad Nacional de Huancavelica: Estabilidad térmica y riesgos urbanos'),
+  createData('Paucar y Montenegro Clifton', '-', 'Integración de RUSLE/SDR Con SIG para evaluar erosión y rendimiento de sedimentos en laderas andinas en proceso de urbanización'),
+  createData('Pino Vargas Edwin Martin', 'Huayna German, Pocco Victor, Espinoza Molina Jorge, Cabrera Olivera Fredy, Acosta Caipa Karina', 'Determinación De Zonas Vulnerables A Inundaciones Repentinas Usando Técnicas De Inteligencia Artificial En Regiones Áridas, Norte Del Desierto De Atacama'),
+  createData('Pino Vargas Edwin Martin', 'Germán Huayna, Víctor Pocco, Pablo Franco-León, Fredy Cabrera-Olivera, César Avendaño-Jihuallanga', 'Dinámica De La Cobertura Terrestre Y Predicciones Proyectadas Cabecera Desierto De Atacama: Un Enfoque Basado En Teledetección E Inteligencia Artificial'),
+  createData('Ponce Victor Miguel', '-', 'La Onda Cinemática Desmitificada'),
+  createData('Ponce Victor Miguel', '-', 'Ondas Cinemático-Dinámicas Mixtas Desbancadas'),
+  createData('Rau Pedro', 'Marcone Giancarlo,  Alcántara Samantha', 'Una aproximación a la reconstrucción hidrológica y revalorización histórica del Rio Zaña en los ultimos 500 años'),
+  createData('Rendón Schneir Eric', '-', 'Análisis del enfoque económico en la Gestión Hídrica en el Perú: Antecedentes Y Perspectivas'),
+  createData('Rivera Huaman Johan Antonio', 'Ambrosio Camayo Erick Julián, Saldaña Quisca Marcelo', 'Modelamiento BIM en la Planificación de la construcción de la Presa de concreto a gravedad Quisco'),
+  createData('Rosas Barturén Miluska A.', 'Varillas Salazar Giannina, Peralta Solórzano Angela, Moya Luis', 'Transformación del territorio fluvial por asentamientos informales: Riesgos emergentes para la infraestructura urbana'),
+  createData('Saldaña Quisca Marcelo', 'Quisca Astocahuana Samuel Ismael ', 'Evaluación de la seguridad física y funcional de La Presa Tinajones mediante análisis 3D de Filtración y de Esfuerzo-Deformación'),
+  createData('Sánchez Astello Ma. Magdalena', '-', 'Determinación del tiempo de ejecución de un Proyecto a través del Diagrama de Redes y de la Ruta Crítica: Estudio De Caso'),
+  createData('Sánchez Astello Ma. Magdalena', '-', 'Administración de obras de infraestructura Hidroagrícola mediante la aplicación de CPM y Diagramas de Gantt: Un Estudio De Caso'),
+  createData('Sánchez Gamarra Kory Celeste', 'Rosas Miluska A.', 'Modelamiento numérico para el Diseño de coberturas de la relavera Mesapata considerando los efectos del cambio climático'),
+  createData('Sanchez Santiago', 'Murga Paniagua Sebastian, Sanchez Carlos', 'Evaluación comparativa de Modelos analíticos, físicos y numéricos para el Diseño de disipadores de energía Tipo USBR II'),
+  createData('Tafur Gutierrez Enrique Leoncio', 'Rozas Olivera Guido Américo, Sarango Julca Duglas Donal', 'Comparación entre un Modelo Numérico y Físico en el Estudio del oleaje en La Costa Verde – Región Callao'),
+  createData('Vargas Huanca Wilder', 'Berbel Julio, Del Águila Sandra, Díaz Cano Esther', 'Valoración económica de sistemas ancestrales de recarga artificial de acuíferos en entornos de Alta Montaña de Sierra Nevada, España'),
+  createData('Ventura Rosas Harold Hans', 'Rivera Leslie, Castilla Chanco Erick,  Cántaro Gideael, Quisca Samuel', 'Evaluación de la capacidad hidráulica del Aliviadero de la Presa Gallito Ciego bajo escenario de cambio climático utilizando la Ecuación De Fokker-Planck-Kolmogorov y Modelación 3D'),
 ];
 
 const ApprovedSummary = () => {
@@ -130,8 +129,8 @@ const ApprovedSummary = () => {
                   <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead sx={{ bgcolor: 'rgb(98, 98, 132)' }}>
                       <TableRow sx={{ color: 'white', fontWeight: 'bold' }}>
-                        <TableCell align="center" sx={{ color: 'white', fontWeight: 'bold' }}>NOMBRES</TableCell>
-                        <TableCell align="center" sx={{ color: 'white', fontWeight: 'bold' }}>APELLIDOS</TableCell>
+                        <TableCell align="center" sx={{ color: 'white', fontWeight: 'bold' }}>AUTOR</TableCell>
+                        <TableCell align="center" sx={{ color: 'white', fontWeight: 'bold' }}>COAUTOR</TableCell>
                         <TableCell align="center" sx={{ color: 'white', fontWeight: 'bold' }}>RESUMEN SELECCIONADO</TableCell>
                       </TableRow>
                     </TableHead>
@@ -141,8 +140,8 @@ const ApprovedSummary = () => {
                           key={row.summary}
                           sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                         >
-                          <TableCell align="start">{row.name}</TableCell>
-                          <TableCell align="start">{row.last_name}</TableCell>
+                          <TableCell align="start">{row.autor}</TableCell>
+                          <TableCell align="start">{row.coautor}</TableCell>
                           <TableCell align="start">{row.summary}</TableCell>
                         </TableRow>
                       ))}
