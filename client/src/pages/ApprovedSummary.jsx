@@ -39,7 +39,7 @@ const rows = [
   createData('Chávarri Velarde Eduardo Abraham', 'Pino Vargas Edwin, Ingol-Blanco Eusebio, Mejía Fabricio, Cruz Ana, Vera Alissa', 'Impactos del cambio climatico y la variabilidad en la precipitacion y los caudales maximos en la Quebrada del Diablo, Tacna, Peru'),
   createData('Chavez Ayala Luis Angel', 'Roger Hidalgo', 'Cunetas Verdes Como Alternativa Sostenible: Análisis Comparativo Mediante La Modelación Física'),
   createData('Cruz Rodriguez Carolina Elizabeth', 'Pino Vargas Edwin, Huayna Germán,  Avendaño Jihuallanga César ', 'El estrés hídrico del cultivo del olivo en la cabecera del desierto Atacama: Un enfoque basado en Teledetección e Inteligencia Artificial'),
-  createData('De la Cruz Araujo Ronald', '-', 'Teoria y experimento en solitones hidrodinamicos'),
+  createData('De la Cruz Araujo Ronald', '-', 'Impacto del fondo del canal en la propagacion de solitones hidrodinamicos - Implicancias para las estructuras hidraulicas, la conservacion de paisajes costeros y el control de inundaciones.'),
   createData('Esteban Yauyo Richard Smith', 'Tafur Gutierrez Leoncio, Rozas Olivera Guido, Sarango Julca Duglas', 'Determinación de cotas de Inundación extrémales en La Punta – Callao mediante Modelación numérica en Python'),
   createData('Flores Riveros Jose A.', 'Flores Galindo Fredy, Noa Yarasca Efrain ', 'Evaluación de variables predictoras e incertidumbre en la estimación de la evapotranspiración mediante redes neuronales'),
   createData('Gastelu Silvera Joseph Frankchesco', 'Condori Hinostroza Joel ', 'Teledetección de Clorofila-A en ecosistemas acuáticos altoandinos: Análisis de Series Temporales 2017-2025'),

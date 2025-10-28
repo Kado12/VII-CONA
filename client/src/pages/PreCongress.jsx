@@ -104,6 +104,14 @@ const PreCongress = () => {
                      <Typography variant="h5" align="center" fontWeight="bold" mb={2} mt={4}>
                         Reducción de desastres relacionados con sedimentos con énfasis en huaycos
                      </Typography>
+                     {/* Ponente 1 */}
+                     <Typography variant="h6" fontWeight="bold" mb={1}>Ponente</Typography>
+                     <Grid container spacing={2} mb={4}>
+                        <Speaker name="Dr. Masato Kobiyama" avatar="DR_MASATO.jpeg">
+                           <Typography variant="body2">Áreas: Hidrogeomorfología, Sociohidrología, Gestión del riesgo de desastres</Typography>
+                           <Typography variant="body2">Formación: Lic. Ciencias (Kioto, 1985), M.Sc. Forestales (Tokio, 1991), Ph.D. Ing. Forestales (Paraná, Brasil, 1994)</Typography>
+                        </Speaker>
+                     </Grid>
                      <Grid container spacing={2} mb={4}>
                         <Grid size={{ xs: 12, md: 6 }}>
                            <CourseCard date="Lunes 03 de Noviembre">
@@ -121,7 +129,6 @@ const PreCongress = () => {
                               </TimeBlock>
                            </CourseCard>
                         </Grid>
-
                         <Grid size={{ xs: 12, md: 6 }}>
                            <CourseCard date="Martes 04 de Noviembre">
                               <TimeBlock time="09:00 am" label="PRIMERA SESIÓN">
@@ -134,19 +141,20 @@ const PreCongress = () => {
                         </Grid>
                      </Grid>
 
-                     {/* Ponente 1 */}
-                     <Typography variant="h6" fontWeight="bold" mb={1}>Ponente</Typography>
-                     <Grid container spacing={2} mb={4}>
-                        <Speaker name="Dr. Masato Kobiyama" avatar="DR_MASATO.jpeg">
-                           <Typography variant="body2">Áreas: Hidrogeomorfología, Sociohidrología, Gestión del riesgo de desastres</Typography>
-                           <Typography variant="body2">Formación: Lic. Ciencias (Kioto, 1985), M.Sc. Forestales (Tokio, 1991), Ph.D. Ing. Forestales (Paraná, Brasil, 1994)</Typography>
-                        </Speaker>
-                     </Grid>
+                     <hr style={{ border: 'none', boxShadow: '0 0 10px 3px rgba(19, 100, 90, 1)' }} />
 
                      {/* ===== CURSO 2 ===== */}
                      <Typography variant="h5" align="center" fontWeight="bold" mb={2} mt={4}>
                         Hidráulica e Hidrología Computacional
                      </Typography>
+                     {/* Ponente 2 */}
+                     <Typography variant="h6" fontWeight="bold" mb={1}>Conferencista</Typography>
+                     <Grid container spacing={2} mb={4}>
+                        <Speaker name="Dr. Víctor Ponce" avatar="DR_PONCE.jpeg">
+                           <Typography variant="body2">Áreas: Hidrología superficial/ambiental, Hidráulica computacional, Ingeniería de sedimentos, Ecohidrología, Sostenibilidad de aguas subterráneas, Cambio climático</Typography>
+                           <Typography variant="body2">Profesor Emérito SDSU (2018), +2 800 publicaciones, 2 Doctorados Honoris Causa, Premio Nacional de Hidráulica Karl E. Hilgard (ASCE, 1979)</Typography>
+                        </Speaker>
+                     </Grid>
                      <Grid container spacing={2} mb={4}>
                         <Grid size={{ xs: 12 }}>
                            <CourseCard date="Martes 04 de Noviembre">
@@ -169,19 +177,20 @@ const PreCongress = () => {
                         </Grid>
                      </Grid>
 
-                     {/* Ponente 2 */}
-                     <Typography variant="h6" fontWeight="bold" mb={1}>Conferencista</Typography>
-                     <Grid container spacing={2} mb={4}>
-                        <Speaker name="Dr. Víctor Ponce" avatar="DR_PONCE.jpeg">
-                           <Typography variant="body2">Áreas: Hidrología superficial/ambiental, Hidráulica computacional, Ingeniería de sedimentos, Ecohidrología, Sostenibilidad de aguas subterráneas, Cambio climático</Typography>
-                           <Typography variant="body2">Profesor Emérito SDSU (2018), +2 800 publicaciones, 2 Doctorados Honoris Causa, Premio Nacional de Hidráulica Karl E. Hilgard (ASCE, 1979)</Typography>
-                        </Speaker>
-                     </Grid>
+                     <hr style={{ border: 'none', boxShadow: '0 0 10px 3px rgba(19, 100, 90, 1)' }} />
 
                      {/* ===== CURSO 3 ===== */}
                      <Typography variant="h5" align="center" fontWeight="bold" mb={2} mt={4}>
                         Herramientas para el diseño de componentes de un aliviadero
                      </Typography>
+                     {/* Ponente 3 */}
+                     <Typography variant="h6" fontWeight="bold" mb={1}>Conferencista</Typography>
+                     <Grid container spacing={2} mb={4}>
+                        <Speaker name="Dr. Rafael Pardo" avatar="DR_PARDO.jpeg">
+                           <Typography variant="body2">Posdoctorado UNICAMP (Brasil), Ph.D. & M.Sc. CUJAE (Cuba), Ing. Hidráulico Universidad de La Habana</Typography>
+                           <Typography variant="body2">19 artículos indexados, 5 libros, 3 monografías, 3 manuales, 25 eventos internacionales</Typography>
+                        </Speaker>
+                     </Grid>
                      <Grid container spacing={2} mb={4}>
                         <Grid size={{ xs: 12 }} margin="auto">
                            <CourseCard date="Martes 04 de Noviembre">
@@ -203,14 +212,6 @@ const PreCongress = () => {
                         </Grid>
                      </Grid>
 
-                     {/* Ponente 3 */}
-                     <Typography variant="h6" fontWeight="bold" mb={1}>Conferencista</Typography>
-                     <Grid container spacing={2} mb={4}>
-                        <Speaker name="Dr. Rafael Pardo" avatar="DR_PARDO.jpeg">
-                           <Typography variant="body2">Posdoctorado UNICAMP (Brasil), Ph.D. & M.Sc. CUJAE (Cuba), Ing. Hidráulico Universidad de La Habana</Typography>
-                           <Typography variant="body2">19 artículos indexados, 5 libros, 3 monografías, 3 manuales, 25 eventos internacionales</Typography>
-                        </Speaker>
-                     </Grid>
 
                      {/* ===== INSCRIPCIONES / BENEFICIOS ===== */}
                      <Typography variant="h5" align="center" fontWeight="bold" my={3}>
