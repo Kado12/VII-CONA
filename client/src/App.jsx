@@ -13,6 +13,9 @@ import Events from './pages/Events'
 import Summary from './pages/Summary'
 import ApprovedSummary from './pages/ApprovedSummary'
 import PreCongress from './pages/PreCongress'
+import GeneralProgram from './pages/GeneralProgram'
+import ScheduledPresentation from './pages/ScheduledPresentation'
+
 
 
 // * Components
@@ -38,6 +41,8 @@ const App = () => {
             <Route path="/summary" element={<Summary />} />
             <Route path="/approved-summary" element={<ApprovedSummary />} />
             <Route path="/pre-congress" element={<PreCongress />} />
+            <Route path="/general-program" element={<GeneralProgram />} />
+            <Route path="/scheduled-presentation" element={<ScheduledPresentation />} />
           </Routes>
         </Box>
         <Footer />

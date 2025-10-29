@@ -39,6 +39,12 @@ const ListNav = () => {
         <ListItemButton component="a" href="/pre-congress">
           <ListItemText primary="Cursos Pre-Congreso" />
         </ListItemButton>
+        <ListItemButton component="a" href="/general-program">
+          <ListItemText primary="Programa General" />
+        </ListItemButton>
+        <ListItemButton component="a" href="/scheduled-presentation">
+          <ListItemText primary="Presentaciones Programadas" />
+        </ListItemButton>
       </Box>
       <Box sx={{ bgcolor: '#f0f0f0', borderRadius: 1, mt: 3 }}>
         <ListItemButton component="a" disabled sx={{ bgcolor: "blue", color: "white" }} >
