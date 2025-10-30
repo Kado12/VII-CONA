@@ -80,8 +80,7 @@ const thematic_axe_4 = [
    createData('Sánchez Gamarra Kory Celeste', 'Rosas Miluska A.', 'Modelamiento numérico para el Diseño de coberturas de la relavera Mesapata considerando los efectos del cambio climático', 'T4-17', 'PUCP'),
    createData('Sanchez Santiago', 'Murga Paniagua Sebastian, Sanchez Carlos', 'Evaluación comparativa de Modelos analíticos, físicos y numéricos para el Diseño de disipadores de energía Tipo USBR II', 'T4-18', 'UNMSM - LIMA'),
    createData('Ventura Rosas Harold Hans', 'Rivera Leslie, Castilla Chanco Erick,  Cántaro Gideael, Quisca Samuel', 'Evaluación de la capacidad hidráulica del Aliviadero de la Presa Gallito Ciego bajo escenario de cambio climático utilizando la Ecuación De Fokker-Planck-Kolmogorov y Modelación 3D', 'T4-19', 'UNMSM - LIMA'),
-   createData('Huisa Maikol J.', 'Cabello Francis G, Jara Mitchel J.', 'Dinamica torrencial y Obras en la Quebrada Agoragra: Desafios para la Gestion de Riesgos', 'T4 - 20', 'MJ&ASOCIADOS'),
-   createData('De la Cruz Araujo Ronald', '-', 'Impacto del fondo del canal en la propagacion de solitones hidrodinamicos: implicancias para las estructuras hidraulicas, la conservacion de paisajes costeros y el control de inundaciones', 'T4 - 21', 'U. N. AUTONOMA DE TAYACAJA')
+   createData('Huisa Maikol J.', 'Cabello Francis G, Jara Mitchel J.', 'Dinamica torrencial y Obras en la Quebrada Agoragra: Desafios para la Gestion de Riesgos', 'T4 - 20', 'MJ&ASOCIADOS')
 ]
 
 const thematic_axe_5 = [

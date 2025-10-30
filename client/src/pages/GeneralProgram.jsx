@@ -226,7 +226,7 @@ export default function GeneralProgram() {
                                  {/* 17:00 - 17:30 */}
                                  <TableRow>
                                     <Cell>17:00 - 17:30 pm</Cell>
-                                    <Cell>PONENCIA T4-05</Cell>
+                                    <Cell>PONENCIA T2-10</Cell>
                                     <Cell>PONENCIA T4-14</Cell>
                                     <Cell>PONENCIA T4-11</Cell>
                                  </TableRow>
@@ -311,7 +311,7 @@ export default function GeneralProgram() {
                                  <TableRow>
                                     <Cell>09:30 - 10:00 am</Cell>
                                     <Cell>PONENCIA T1-05</Cell>
-                                    <Cell>PONENCIA T2-05</Cell>
+                                    <Cell>PONENCIA T4-05</Cell>
                                  </TableRow>
 
                                  {/* ---------- 10:00 - 10:30 ---------- */}
@@ -419,8 +419,8 @@ export default function GeneralProgram() {
                                  <TableRow>
                                     <Cell>17:00 - 17:30 pm</Cell>
                                     <Cell>PONENCIA T5-01</Cell>
-                                    <Cell bg={colors.viii_cona} rowSpan={2}>FORO: LA EXPERIMENTACIÓN Y LA INVESTIGACÓN</Cell>
-                                    <Cell bg={colors.viii_cona} rowSpan={2}>FORO: LA INGENIERÍA HIDRÁULICA Y LA 4A REVOLUCIÓN</Cell>
+                                    <Cell bg={colors.viii_cona} rowSpan={2}>FORO: LA EXPERIMENTACIÓN Y LA INVESTIGACÓN EN LAS UNIVERSIDADES</Cell>
+                                    <Cell bg={colors.viii_cona} rowSpan={2}>FORO: LA INGENIERÍA HIDRÁULICA Y LA 4A REVOLUCIÓN INDUSTRIAL</Cell>
                                  </TableRow>
 
                                  {/* 17:30 - 18:00 */}
@@ -500,7 +500,7 @@ export default function GeneralProgram() {
                                  <TableRow>
                                     <Cell>09:30 - 10:00 am</Cell>
                                     <Cell>PONENCIA T5-05</Cell>
-                                    <Cell>PONENCIA T4-21</Cell>
+                                    <Cell>PONENCIA T5-03</Cell>
                                  </TableRow>
 
                                  {/* ---------- 10:00 - 10:30 ---------- */}
@@ -533,7 +533,7 @@ export default function GeneralProgram() {
                                  {/* ---------- 12:00 - 12:30 ---------- */}
                                  <TableRow>
                                     <Cell>12:00 - 12:30 pm</Cell>
-                                    <Cell>PONENCIA T2-10</Cell>
+                                    <Cell>PONENCIA T2-50</Cell>
                                     <Cell>PONENCIA T3-06</Cell>
                                     <Cell>PONENCIA T5-04</Cell>
                                  </TableRow>
@@ -580,7 +580,7 @@ export default function GeneralProgram() {
                                     <Cell bg={colors.course} rowSpan={9}>CURSO PRE CONGRESO</Cell>
                                     <Cell>PONENCIA T3-02</Cell>
                                     <Cell>PONENCIA T3-08</Cell>
-                                    <Cell>PONENCIA T5-03</Cell>
+                                    <Cell></Cell>
                                  </TableRow>
 
                                  {/* 15:30 - 16:00 */}
