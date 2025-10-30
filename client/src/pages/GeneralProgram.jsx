@@ -533,7 +533,7 @@ export default function GeneralProgram() {
                                  {/* ---------- 12:00 - 12:30 ---------- */}
                                  <TableRow>
                                     <Cell>12:00 - 12:30 pm</Cell>
-                                    <Cell>PONENCIA T2-50</Cell>
+                                    <Cell>PONENCIA T2-05</Cell>
                                     <Cell>PONENCIA T3-06</Cell>
                                     <Cell>PONENCIA T5-04</Cell>
                                  </TableRow>
