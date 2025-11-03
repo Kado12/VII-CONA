@@ -235,8 +235,8 @@ export default function GeneralProgram() {
                                  <TableRow>
                                     <Cell>17:30 - 18:00 pm</Cell>
                                     <Cell bg={colors.technique}>CONFERENCIA TÉCNICA DR. JULIO KUROIWA</Cell>
-                                    <Cell bg={colors.technique}>CONFERENCIA TÉCNICA MACAFERRI</Cell>
-                                    <Cell bg={colors.technique}>CONFERENCIA TÉCNICA CEDEP</Cell>
+                                    <Cell bg={colors.technique}>CONFERENCIA TÉCNICA DR. LEONCIO HUAYLLANI</Cell>
+                                    <Cell bg={colors.technique}>CONFERENCIA TÉCNICA ING. TEODOSIO TORRES</Cell>
                                  </TableRow>
 
                                  {/* 18:00 - 18:30 */}
@@ -344,7 +344,7 @@ export default function GeneralProgram() {
                                  {/* ---------- 12:00 - 12:30 ---------- */}
                                  <TableRow>
                                     <Cell>12:00 - 12:30 pm</Cell>
-                                    <Cell bg={colors.technique}>CONFERENCIA TÉCNICA CONSEJO DE CUENCA TSI</Cell>
+                                    <Cell bg={colors.technique}>CONFERENCIA TÉCNICA MACAFERRI</Cell>
                                     <Cell bg={colors.technique}>CONFERENCIA TÉCNICA DR. ELIAS TAPIA</Cell>
                                     <Cell bg={colors.technique}>CONFERENCIA TÉCNICA DRA. MARIA TERESA ORE</Cell>
                                  </TableRow>
@@ -389,7 +389,7 @@ export default function GeneralProgram() {
                                     <Cell>15:00 - 15:30 pm</Cell>
                                     <Cell bg={colors.course} rowSpan={9}>CURSO PRE CONGRESO</Cell>
                                     <Cell bg={colors.course} rowSpan={9}>CURSO PRE CONGRESO</Cell>
-                                    <Cell>PONENCIA T1-04</Cell>
+                                    <Cell></Cell>
                                     <Cell>PONENCIA T1-07</Cell>
                                     <Cell>PONENCIA T2-08</Cell>
                                  </TableRow>
@@ -420,7 +420,7 @@ export default function GeneralProgram() {
                                     <Cell>17:00 - 17:30 pm</Cell>
                                     <Cell>PONENCIA T5-01</Cell>
                                     <Cell bg={colors.viii_cona} rowSpan={2}>FORO: LA EXPERIMENTACIÓN Y LA INVESTIGACÓN EN LAS UNIVERSIDADES</Cell>
-                                    <Cell bg={colors.viii_cona} rowSpan={2}>FORO: LA INGENIERÍA HIDRÁULICA Y LA 4A REVOLUCIÓN INDUSTRIAL</Cell>
+                                    <Cell bg={colors.viii_cona} rowSpan={2}>FORO: LA INGENIERÍA HIDRÁULICA Y LA 4TA REVOLUCIÓN INDUSTRIAL</Cell>
                                  </TableRow>
 
                                  {/* 17:30 - 18:00 */}
@@ -491,7 +491,7 @@ export default function GeneralProgram() {
                                     <Cell>09:00 - 09:30 am</Cell>
                                     <Cell bg={colors.course} rowSpan={8}>CURSO PRE CONGRESO</Cell>
                                     <Cell bg={colors.course} rowSpan={8}>CURSO PRE CONGRESO</Cell>
-                                    <Cell rowSpan={2}></Cell>
+                                    <Cell>PONENCIA T4-20</Cell>
                                     <Cell>PONENCIA T3-01</Cell>
                                     <Cell>PONENCIA T4-20</Cell>
                                  </TableRow>
@@ -499,6 +499,7 @@ export default function GeneralProgram() {
                                  {/* ---------- 09:30 - 10:00 (vacía) ---------- */}
                                  <TableRow>
                                     <Cell>09:30 - 10:00 am</Cell>
+                                    <Cell>PONENCIA T1-06</Cell>
                                     <Cell>PONENCIA T5-05</Cell>
                                     <Cell>PONENCIA T5-03</Cell>
                                  </TableRow>
@@ -525,8 +526,8 @@ export default function GeneralProgram() {
                                  {/* ---------- 11:30 - 12:00 ---------- */}
                                  <TableRow>
                                     <Cell>11:30 - 12:00 pm</Cell>
-                                    <Cell bg={colors.technique}>CONFERENCIA TÉCNICA</Cell>
-                                    <Cell bg={colors.technique}>CONFERENCIA TÉCNICA</Cell>
+                                    <Cell bg={colors.technique}>CONFERENCIA TÉCNICA MAG. RICADO ROSAS</Cell>
+                                    <Cell bg={colors.technique}>CONFERENCIA TÉCNICA DR. CARLOS IPAGUIRRE</Cell>
                                     <Cell bg={colors.technique}>CONFERENCIA TÉCNICA</Cell>
                                  </TableRow>
 
@@ -578,30 +579,30 @@ export default function GeneralProgram() {
                                     <Cell>15:00 - 15:30 pm</Cell>
                                     <Cell bg={colors.course} rowSpan={9}>CURSO PRE CONGRESO</Cell>
                                     <Cell bg={colors.course} rowSpan={9}>CURSO PRE CONGRESO</Cell>
-                                    <Cell>PONENCIA T3-02</Cell>
-                                    <Cell>PONENCIA T3-08</Cell>
                                     <Cell></Cell>
+                                    <Cell>PONENCIA T3-08</Cell>
+                                    <Cell>PONENCIA T2-02</Cell>
                                  </TableRow>
 
                                  {/* 15:30 - 16:00 */}
                                  <TableRow>
                                     <Cell>15:30 - 16:00 pm</Cell>
-                                    <Cell rowSpan={2}></Cell>
-                                    <Cell rowSpan={2}></Cell>
-                                    <Cell rowSpan={2}></Cell>
+                                    <Cell>PONENCIA T3-03</Cell>
+                                    <Cell>PONENCIA T3-11</Cell>
+                                    <Cell></Cell>
                                  </TableRow>
 
                                  {/* 16:00 - 16:30 */}
                                  <TableRow>
                                     <Cell>16:00 - 16:30 pm</Cell>
+                                    <Cell rowSpan={2}></Cell>
+                                    <Cell rowSpan={2}></Cell>
+                                    <Cell rowSpan={2}></Cell>
                                  </TableRow>
 
                                  {/* 16:30 - 17:00 */}
                                  <TableRow>
                                     <Cell>16:30 - 17:00 pm</Cell>
-                                    <Cell>PONENCIA T3-03</Cell>
-                                    <Cell>PONENCIA T3-09</Cell>
-                                    <Cell></Cell>
                                  </TableRow>
 
                                  {/* 17:00 - 17:30 */}
