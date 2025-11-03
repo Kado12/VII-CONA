@@ -31,6 +31,11 @@ const rows = [
   createData('GRUPO CORPORATIVO MINIMO 3 PROFESIONALES', '-', 'S/300.00 CADA UNO', 'S/300.00 CADA UNO')
 ];
 
+const rows_virtual = [
+  createData('PROFESIONALES', '-', 'S/150.00', 'S/150.00'),
+  createData('ESTUDIANTES', '-', 'S/100.00', 'S/100.00')
+];
+
 const Inscriptions = () => {
 
 
@@ -50,7 +55,7 @@ const Inscriptions = () => {
             <Grid size={{ xs: 12, sm: 8, md: 9 }}>
               <Box component="section" sx={{ p: 2 }}>
                 <Typography variant="h5" component="div" sx={{ flexGrow: 1, textAlign: 'center', px: 2, fontWeight: 'bold', mb: 2 }}>
-                  Inscripciones
+                  Inscripciones Presenciales
                 </Typography>
                 <TableContainer component={Paper}>
                   <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -64,6 +69,37 @@ const Inscriptions = () => {
                     </TableHead>
                     <TableBody>
                       {rows.map((row) => (
+                        <TableRow
+                          key={row.category}
+                          sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                        >
+                          <TableCell component="th" scope="row">
+                            {row.category}
+                          </TableCell>
+                          <TableCell align="center">{row.pre_inscription}</TableCell>
+                          <TableCell align="center">{row.inscription}</TableCell>
+                          <TableCell align="center">{row.post_inscription}</TableCell>
+                        </TableRow>
+                      ))}
+                    </TableBody>
+                  </Table>
+                </TableContainer>
+                <hr style={{ border: '1px solid #3e4f5283', margin: '20px 0', boxShadow: '0px 0px 10px 2px #153c3cff' }} />
+                <Typography variant="h5" component="div" sx={{ flexGrow: 1, textAlign: 'center', px: 2, fontWeight: 'bold', mb: 2 }}>
+                  Participacion Virtual
+                </Typography>
+                <TableContainer component={Paper}>
+                  <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                    <TableHead sx={{ bgcolor: 'rgb(98, 98, 132)' }}>
+                      <TableRow sx={{ color: 'white', fontWeight: 'bold' }}>
+                        <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>CATEGORÍA</TableCell>
+                        <TableCell align="center" sx={{ color: 'white', fontWeight: 'bold' }}>INSCRIPCION TEMPRANA<br />(04 MARZO - 30 AGOS 2025)</TableCell>
+                        <TableCell align="center" sx={{ color: 'white', fontWeight: 'bold' }}>INSCRIPCION NORMAL<br />(01 SET - 3 NOV. 2025)</TableCell>
+                        <TableCell align="center" sx={{ color: 'white', fontWeight: 'bold' }}>INSCIPCION AL INICIO DEL EVENTO<br />(DESDE 4 NOVIEMBRE 2025)</TableCell>
+                      </TableRow>
+                    </TableHead>
+                    <TableBody>
+                      {rows_virtual.map((row) => (
                         <TableRow
                           key={row.category}
                           sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
