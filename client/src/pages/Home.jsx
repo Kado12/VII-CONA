@@ -66,11 +66,12 @@ const Home = () => {
         onClose={() => setOpenReel(false)}
         // videoSrc="/CONA REEL 4.mp4"
         // poster="https://via.placeholder.com/400x600"
-        title="COMUNICADO DE LA COMISION DE EVALUACION DE RESUMENES DE INVESTIGACION"
+        title="AVISO IMPORTANTE"
       >
         <Box sx={{ p: 2, textAlign: 'justify' }}>
           <Typography variant="body2" color="text.primary" marginBottom={1}>
-            Estimados(as) colegas ponentes, debido al retraso en la publicación de resumes aprobados y a las solicitudes recibidas para emitir un documento que les permita trámitar el pago como ponente, la Comisión Organizadora del VII CONA ICA 2025 posterga el día para entrega de Resúmenes extendidos y envío de voucher por inscripción hasta el día miércoles 29 de octubre 2025.
+            Se comunica a todos los participantes y poinentes del VII CONA 2025, que el evento se ha iniciado con los Cursos Pre COngreso el día de ayer 3 de noviembre, el día 4 se continuará con los Cursos Pre Congreso en el Auditorio Raúl Porras Barrenechea y en el Teatro Abraham Valdelomar en el local central de la Universidad, ubicados en la 2da cuadra de Jr. Bolivar a 1/2 cuadra de la Plaza de Armas de Ica, así mismo la asistencia a los Cursos Pre Congreso es libre para todos los inscritos en el Congreso.
+            Por otro lado, el día miercoles 5 de noviembre desde las 8 am el VII CONA2025 se inciará en el Hotel Las Dunas de Ica.
           </Typography>
         </Box>
         <Box sx={{ p: 2, textAlign: 'end' }}>
@@ -78,7 +79,7 @@ const Home = () => {
             Atentamente
           </Typography>
           <Typography variant="body2" color="primary" fontWeight="bold">
-            MSc. Freddy Franco Alvarado - DECANO FIC
+            La Comisión
           </Typography>
         </Box>
       </Modals>

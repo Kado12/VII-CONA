@@ -132,24 +132,6 @@ const Summary = () => {
               <ListNav />
             </Grid>
             <Grid size={{ xs: 12, sm: 8, md: 9 }}>
-              <Box component="section" sx={{ p: 2, bgcolor: 'rgba(160, 135, 113, 0.49)', textAlign: 'center', fontWeight: 'bold', border: 1, borderColor: 'rgb(177, 156, 138)', borderStyle: 'solid', margin: 1 }}>
-                <Typography variant="p" color="primary" component="div" sx={{ flexGrow: 1, textShadow: '0px 0px 5px #3af' }}>
-                  COMUNICADO IMPORTANTE
-                </Typography>
-                <Box sx={{ p: 2, textAlign: 'justify' }}>
-                  <Typography variant="body2" color="text.primary" marginBottom={1}>
-                    Estimados(as) colegas ponentes, debido al retraso en la publicación de resumes aprobados y a las solicitudes recibidas para emitir un documento que les permita trámitar el pago como ponente, la Comisión Organizadora del VII CONA ICA 2025 posterga el día para entrega de Resúmenes extendidos y envío de voucher por inscripción hasta el día miércoles 29 de octubre 2025.
-                  </Typography>
-                </Box>
-                <Box sx={{ p: 2, textAlign: 'end' }}>
-                  <Typography variant="body2" color="text.primary" fontWeight="bold">
-                    Atentamente
-                  </Typography>
-                  <Typography variant="body2" color="primary" fontWeight="bold">
-                    MSc. Freddy Franco Alvarado - DECANO FIC
-                  </Typography>
-                </Box>
-              </Box>
               <Box component="section" sx={{ p: 2 }}>
                 <Typography variant="h5" component="div" sx={{ flexGrow: 1, textAlign: 'center', px: 2, fontWeight: 'bold', mb: 2 }}>
                   Guía para la presentación de Resúmenes Extendidos
