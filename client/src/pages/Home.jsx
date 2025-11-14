@@ -66,20 +66,28 @@ const Home = () => {
         onClose={() => setOpenReel(false)}
         // videoSrc="/CONA REEL 4.mp4"
         // poster="https://via.placeholder.com/400x600"
-        title="AVISO IMPORTANTE"
+        title="COMUNICADO"
       >
         <Box sx={{ p: 2, textAlign: 'justify' }}>
           <Typography variant="body2" color="text.primary" marginBottom={1}>
-            Se comunica a todos los participantes y poinentes del VII CONA 2025, que el evento se ha iniciado con los Cursos Pre COngreso el día de ayer 3 de noviembre, el día 4 se continuará con los Cursos Pre Congreso en el Auditorio Raúl Porras Barrenechea y en el Teatro Abraham Valdelomar en el local central de la Universidad, ubicados en la 2da cuadra de Jr. Bolivar a 1/2 cuadra de la Plaza de Armas de Ica, así mismo la asistencia a los Cursos Pre Congreso es libre para todos los inscritos en el Congreso.
-            Por otro lado, el día miercoles 5 de noviembre desde las 8 am el VII CONA2025 se inciará en el Hotel Las Dunas de Ica.
+            La Comisión Organizadora del VII CONGRESO NACIONAL DEL AGUA, expresa su profundo agradecimiento a todos los asistentes en las diferentes categorías: Expositores extranjeros, Expositores nacionales, Ponentes, profesionales y estudiantes, por su excelente participación y aportes a la gestión de los recursos hídricos y las obras hidráulicas, que estamos seguros beneficiaran a nuestro país.
+          </Typography>
+          <Typography variant="body2" color="text.primary" marginBottom={1}>
+            Por otro lado, comunicamos que los CERTIFICADOS serán digitales y se estarán remitiendo a los correos la próxima semana, luego de la verificación por parte de la Comisión de economía y de la Comisión de acreditación.
           </Typography>
         </Box>
         <Box sx={{ p: 2, textAlign: 'end' }}>
+          <Typography variant="body2" color="text.primary" fontWeight="bold" textAlign={'start'}>
+            Ica, 10 de noviembre 2025
+          </Typography>
           <Typography variant="body2" color="text.primary" fontWeight="bold">
             Atentamente
           </Typography>
           <Typography variant="body2" color="primary" fontWeight="bold">
             La Comisión
+          </Typography>
+          <Typography variant="body2" color="primary" fontWeight="bold">
+            VII CONA 2025, ICA - PERU
           </Typography>
         </Box>
       </Modals>
